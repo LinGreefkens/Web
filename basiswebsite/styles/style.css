@@ -28,7 +28,15 @@
 /****************/
 /* JOUW STYLING */
 /****************/
-header a {
+h1{
+	font-family: sfsquarehead;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: xx-large;
+}
+
+h2{
 	font-family: Calibre, Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	letter-spacing: 0.02em;
@@ -36,39 +44,28 @@ header a {
 	font-size: xx-large;
 }
 
-.nav2 {
-	font-family: Calibre, Helvetica, Arial, sans-serif;
-	font-weight: 400;
-	font-size: larger;
-	letter-spacing: 0.02em;
-	text-decoration: none;
-}
-
-H1 {
+a{
 	font-family: Calibre, Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	letter-spacing: 0.02em;
-}
-
-h2 {
-	font-family: sfsquarehead;
-	letter-spacing: 0.1em;
-	font-size: 3em;
-}
-
-main a {
-	font-family: sfsquarehead;
-	letter-spacing: 0.1em;
-	font-size: 3em;
 	color: black;
-	font-weight: 900;
-	text-decoration: none;
+	font-size: xx-large;	
 }
 
-h3 {
-	font-family: Calibre, Helvetica, Arial, sans-serif;
+h3{
+	font-family: sfsquarehead;
 	font-weight: 400;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: xx-large;	
+}
+
+h4{
+	font-family: sfsquarehead;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: xx-large;
 }
 
 button {
@@ -80,25 +77,40 @@ button {
 	border: none;
 }
 
-p {
+h5{
+	font-family: Calibre, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: black;
+}
+
+h6{
+	font-family: Calibre, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: grey;
+}
+
+data{
+	font-family: sfsquarehead;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: black;
+}
+
+p{
 	font-family: Calibre, Helvetica, Arial, sans-serif;
 	/* hoe zorg ik dat Calibre werkt? */
 	font-weight: 400;
 	font-size: 1.125rem;
 	line-height: 1.35;
 }
-
-p a {
-	font-family: Calibre, Helvetica, Arial, sans-serif;
-	/* hoe zorg ik dat Calibre werkt? */
-	font-weight: 400;
-	font-size: 1.125rem;
-	line-height: 1.35;
-}
-
 
 img {
 	width: 45%;
 	height: auto;
 }
 
+footer{
+	background-color: black;
+}
