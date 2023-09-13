@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+Lin Greefkens
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+Responsive
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.melkweg.nl/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home  
+  <img src="images/homescreen.png" width="375px" alt="Homescreen Melkweg">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Young Creatives 
+  <img src="images/youngcreatives.png" width="375px" alt="Young Creatives">
  
 </details>
 
@@ -56,7 +56,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  - met spasmes kun je lastig een website gebruiken
+  - een screenreader is best lastig te volgen. 
+    hij leest vaak dingen pas voor als je iets selecteert. Maar als je blind bent kun je dat niet zelf selecteren.
+  - als je kleurenblind bent lijken de kleuren rood en groen op elkaar. hier moet je dus rekening 
+    mee houden bij het designen van een website
+  - als slechtziende is een groot contrast in een website erg prettig
 
 </details>
 
@@ -88,17 +93,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Op zich loop ik redelijk op schema, denk ik. Ik heb niet echt een planning maar ik ga steeds aan de slag met wat op dat moment lukt. Ik heb diepe dalen en hoge pieken bij dit vak haha. Wanneer een onderdeel niet lukt ga ik aan de slag met een andere onderdeel, en bewaar ik het geen wat niet lukt voor een andere keer.
+  Wat ik op dit moment lastig vind is het opbouwen van het Grid. Het is namelijk nogal een complexe vormgeving die niet op gelijke rijen en kollomen staat. Ook het responsive maken van sommige onderdelen lukt nog niet zo makkelijk, zoals bijvoorbeeld de h1. Waar ik ook wel een beetje tegenop zie is een animatie maken van de H1. Maar ik ga mijn best doen.
+
+  Screenshots responsive H1:
+  <img src="images/screenshot_h1_iphone" alt="screenshot h1 iphone">
+  <img src="images/screenshot_h1_desktop" alt="screenshot h1 desktop">
+
+  Screenshot Grid:
+  <img src="images/screenshot_grid" alt="screenshot Grid">
+
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Lin Greefkens    | student 2          | student 3    | student 4        |
+  | ---              | ---                | ---          | ---              |
+  | site doorlopen   | en dit             | en ik dit    | en dan ik dat    |
+  | onderdelen die   | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | nog niet lukken  | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
