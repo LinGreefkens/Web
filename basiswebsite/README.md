@@ -66,7 +66,7 @@ Responsive
 </details>
 
 
-
+<!-- 
 ## Breakdownschets (week 1)
 
 <details>
@@ -81,7 +81,7 @@ Responsive
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
-</details>
+</details> -->
 
 
 
@@ -93,17 +93,26 @@ Responsive
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Op zich loop ik redelijk op schema, denk ik. Ik heb niet echt een planning maar ik ga steeds aan de slag met wat op dat moment lukt. Ik heb diepe dalen en hoge pieken bij dit vak haha. Wanneer een onderdeel niet lukt ga ik aan de slag met een andere onderdeel, en bewaar ik het geen wat niet lukt voor een andere keer.
+  Wat ik op dit moment lastig vind is het opbouwen van het Grid. Het is namelijk nogal een complexe vormgeving die niet op gelijke rijen en kollomen staat. Ook het responsive maken van sommige onderdelen lukt nog niet zo makkelijk, zoals bijvoorbeeld de h1. Waar ik ook wel een beetje tegenop zie is een animatie maken van de H1. Maar ik ga mijn best doen.
+
+  Screenshots responsive H1:
+  <img src="images/screenshot_h1_iphone" alt="screenshot h1 iphone">
+  <img src="images/screenshot_h1_desktop" alt="screenshot h1 desktop">
+
+  Screenshot Grid:
+  <img src="images/screenshot_grid" alt="screenshot Grid">
+
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Lin Greefkens    | student 2          | student 3    | student 4        |
+  | ---              | ---                | ---          | ---              |
+  | site doorlopen   | en dit             | en ik dit    | en dan ik dat    |
+  | onderdelen die   | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | nog niet lukken  | ...                | ...          | ...              |
 
 
   ### Verslag van meeting

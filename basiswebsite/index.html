@@ -15,14 +15,17 @@
 <body>
 	<header>
 		<h1>MELKWEG</h1>
-		<h2>FORMER MILK FACTORY, NOW CULTURAL VENUE</h2>
 		<nav>
+			<h2>FORMER MILK FACTORY, <br> NOW CULTURAL VENUE</h2>
 			<a href="concerts.html" rel="concerts">CONCERTS</a>
 			<a href="club.html" rel="club">CLUB</a>
 			<a href="film.html" rel="film">FILM</a>
 			<a href="expo.html" rel="expo">EXPO</a>
-			<h2>&</h2>
-			<a href="youngcreatives.html" rel="youngcreatives">YOUNG CREATIVES</a>
+
+			<div class="containernav">
+				<h2>&</h2>
+				<a href="youngcreatives.html" rel="youngcreatives">YOUNG CREATIVES</a>
+			</div>
 		</nav>
 	</header>
 
@@ -30,70 +33,70 @@
 	<main>
 		<!-- HIER DE SECTION MET AFBEELDINGEN VAN PROGRAMMA (grid) -->
 		<section class="grid-container">
-				<article>
-					<img src="images/dubfx.jpg" alt="Dub FX">
-					<time datetime="2023-11-10">VR 10 NOV</time>
-					<h3>DUB FX</h3>
-				</article>
+			<article>
+				<img src="images/dubfx.jpg" alt="Dub FX">
+				<time datetime="2023-11-10">VR 10 NOV</time>
+				<h3>DUB FX</h3>
+			</article>
 
-				<article>
-					<img src="images/theamityaffliction.jpg" alt="The Amity Affliction">
-					<time datetime="2023-12-09">ZA 09 DEC</time>
-					<h3>THE AMITY AFFLICTION</h3>
-				</article>
+			<article>
+				<img src="images/theamityaffliction.jpg" alt="The Amity Affliction">
+				<time datetime="2023-12-09">ZA 09 DEC</time>
+				<h3>THE AMITY AFFLICTION</h3>
+			</article>
 
-				<article>
-					<img src="images/heavy.jpg" alt="Heavy">
-					<h3>HEAVY</h3>
-				</article>
+			<article>
+				<img src="images/heavy.jpg" alt="Heavy">
+				<h3>HEAVY</h3>
+			</article>
 
-				<article>
-					<img src="images/colinbenders.jpg" alt="Colin Benders Invites">
-					<time datetime="2023-10-19">DO 19 OKT</time>
-					<h3>COLIN BENDERS INVITES: BLAWAN LIVE / JAKOJAKO...</h3>
-				</article>
+			<article>
+				<img src="images/colinbenders.jpg" alt="Colin Benders Invites">
+				<time datetime="2023-10-19">DO 19 OKT</time>
+				<h3>COLIN BENDERS INVITES: BLAWAN LIVE / JAKOJAKO...</h3>
+			</article>
 
-				<article>
-					<img src="images/thesherlocks.jpg" alt="The Sherlocks">
-					<time datetime="2023-12-09">ZA 09 DEC</time>
-					<h3>THE SHERLOCKS</h3>
-				</article>
+			<article>
+				<img src="images/thesherlocks.jpg" alt="The Sherlocks">
+				<time datetime="2023-12-09">ZA 09 DEC</time>
+				<h3>THE SHERLOCKS</h3>
+			</article>
 
-				<article>
-					<img src="images/eliasmazian.png" alt="Elias Mazian">
-					<time datetime="2023-12-13">WO 13 DEC</time>
-					<h3>ELIAS MAZIAN (LIVE)</h3>
-				</article>
+			<article>
+				<img src="images/eliasmazian.png" alt="Elias Mazian">
+				<time datetime="2023-12-13">WO 13 DEC</time>
+				<h3>ELIAS MAZIAN (LIVE)</h3>
+			</article>
 
-				<article>
-					<img src="images/expo.jpeg" alt="Expo">
-					<h3>EXPO</h3>
-				</article>
+			<article>
+				<img src="images/expo.jpeg" alt="Expo">
+				<h3>EXPO</h3>
+			</article>
 
-				<article>
-					<img src="images/yaeji.png" alt="Yaeji">
-					<time datetime="2023-11-07">DI 07 NOV</time>
-					<h3>YAEJI</h3>
-				</article>
+			<article>
+				<img src="images/yaeji.png" alt="Yaeji">
+				<time datetime="2023-11-07">DI 07 NOV</time>
+				<h3>YAEJI</h3>
+			</article>
 
-				<article>
-					<img src="images/madison.png" alt="Madison McFerrin">
-					<time datetime="2023-11-04">ZA 04 NOV</time>
-					<h3>MADISON MCFERRIN</h3>
-				</article>
+			<article>
+				<img src="images/madison.png" alt="Madison McFerrin">
+				<time datetime="2023-11-04">ZA 04 NOV</time>
+				<h3>MADISON MCFERRIN</h3>
+			</article>
 
-				<article>
-					<img src="images/leelajames.jpg" alt="Leela James">
-					<time datetime="2023-10-28">ZA 28 OKT</time>
-					<h3>LEELA JAMES</h3>
-				</article>
+			<article>
+				<img src="images/leelajames.jpg" alt="Leela James">
+				<time datetime="2023-10-28">ZA 28 OKT</time>
+				<h3>LEELA JAMES</h3>
+			</article>
 		</section>
 
 		<section class="programma">
 			<h4>PROGRAMMA</h4>
 			<button onclick="showEvents('justAnnounced')">JUST ANNOUNCED</button>
 			<button onclick="showEvents('nextUp')">NEXT UP</button>
-			<hr>	
+			<hr>
 
 			<!-- alles hieronder is wanneer button "just announced" -->
 			<article class="justAnnounced">
@@ -137,12 +140,10 @@
 				<h6>CONCERT</h6>
 				<time datetime="2023-11-02">DO 02 NOV</time>
 			</article>
-		</section>
 
 		<!-- alles hieronder is wanneer button "next up" -->
-		<section>
 			<article class="nextUp">
-				<h5>ARTY PARTY PHOTOGRAPHY GRADUATES 2023</h5>
+				<h5>ARTY PARTY <br> PHOTOGRAPHY GRADUATES 2023</h5>
 				<h6>EXPOSITIE</h6>
 				<time datetime="2023-09-08">VR 08 SEP - ZO 08 OKT</time>
 			</article>
@@ -178,7 +179,7 @@
 			</article>
 
 			<article class="nextUp">
-				<h5>HAVE YOU GOT IT YET? THE STORY OF SYD BARRET AND PINK FLOYD (2023)</h5>
+				<h5>HAVE YOU GOT IT YET? <br> THE STORY OF SYD BARRET AND PINK FLOYD (2023)</h5>
 				<h6>FILM</h6>
 				<time datetime="2023-09-13">WO 13 SEP</time>
 			</article>
@@ -186,27 +187,29 @@
 
 		<section class="highlights">
 			<h5>HIGHLIGHTS</h5>
-				<article>
-					<img src="images/artyparty.png" alt="Arty Party Photography Graduates">
-					<time datetime="2023-09-08">VR 08 SEP - ZO 08 OKT</time>
-					<H2>ARTY PARTY PHOTOGRAPHY GRADUATES 2023</H2>
-				</article>
+			<hr>
+			<article>
+				<img src="images/artyparty.png" alt="Arty Party Photography Graduates">
+				<time datetime="2023-09-08">VR 08 SEP - ZO 08 OKT</time>
+				<H2>ARTY PARTY PHOTOGRAPHY GRADUATES 2023</H2>
+			</article>
 
-				<article>
-					<img src="images/pyxxls.jpeg" alt="PYXXKS">
-					<time datetime="2023-09-15">VR 15 SEP</time>
-					<H2>PYXXLS</H2>
-				</article>
+			<article>
+				<img src="images/pyxxls.jpeg" alt="PYXXKS">
+				<time datetime="2023-09-15">VR 15 SEP</time>
+				<H2>PYXXLS</H2>
+			</article>
 
-				<article>
-					<img src="images/parelsuitdebijlmer.jpeg" alt="Parels uit de Bijlmer">
-					<time datetime="2023-09-13">DO 18 SEP</time>
-					<H2>PARELS UIT DE BIJLMER</H2>
-				</article>
+			<article>
+				<img src="images/parelsuitdebijlmer.jpeg" alt="Parels uit de Bijlmer">
+				<time datetime="2023-09-13">DO 18 SEP</time>
+				<H2>PARELS UIT DE BIJLMER</H2>
+			</article>
 		</section>
 
 		<hr>
 		<a href="agenda.html" rel="agenda">AGENDA</a>
+		<img src="images/arrow.svg" alt="arrow" class="agenda_arrow">
 		<hr>
 
 		<section>
@@ -223,13 +226,14 @@
 				zodat
 				jij ons kunt betoveren met je talenten.
 			</p>
-			<a href="youngcreatives.html" rel="youngcreatives">Lees meer</a>
+			<a class="leesmeer_button" href="youngcreatives.html" rel="youngcreatives">Lees meer </a>
+			<img src="images/arrow.svg" alt="arrow" class="leesmeer_arrow">
 		</section>
 	</main>
 
 	<footer>
-		<img src="images/_logo-melkweg_wit.svg" alt="logo Melkweg">
-		<img src="images/search_button.svg" alt="search button" class="search-button">
+		<a href="index.html" rel="homepage"><img src="images/_logo-melkweg_wit.svg" alt="logo Melkweg"></a>
+		<img src="images/search_button.svg" alt="search button">
 		<img src="images/hamburgermenu_button.svg" alt="hamburger menu button">
 	</footer>
 

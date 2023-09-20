@@ -5,6 +5,8 @@
 *::after,
 *::before {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -28,89 +30,502 @@
 /****************/
 /* JOUW STYLING */
 /****************/
-h1{
-	font-family: sfsquarehead;
-	font-weight: 400;
-	letter-spacing: 0.1em;
-	color: black;
-	font-size: xx-large;
+@font-face {
+	font-family: 'SfSquarehead';
+	src: url('../fonts/sfsquarehead.woff') format(woff);
+
+	font-family: 'CalibreRegular';
+	src: url('../fonts/CalibreRegular.woff') format(woff);
 }
 
-h2{
-	font-family: Calibre, Helvetica, Arial, sans-serif;
-	font-weight: 400;
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+
+h1 {
+	font-family: 'SfSquarehead';
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: 14.8vw;
+}
+
+h2 {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	letter-spacing: 0.02em;
+	line-height: 1.2em;
+	color: black;
+	font-size: 180%;
+	margin-top: 4%;
+}
+
+
+a {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
 	letter-spacing: 0.02em;
 	color: black;
-	font-size: xx-large;
+	font-size: 180%;
 }
 
-a{
-	font-family: Calibre, Helvetica, Arial, sans-serif;
-	font-weight: 400;
-	letter-spacing: 0.02em;
-	color: black;
-	font-size: xx-large;	
-}
-
-h3{
-	font-family: sfsquarehead;
-	font-weight: 400;
-	letter-spacing: 0.1em;
-	color: black;
-	font-size: xx-large;	
-}
-
-h4{
-	font-family: sfsquarehead;
-	font-weight: 400;
+h3 {
+	font-family: 'SfSquarehead';
 	letter-spacing: 0.1em;
 	color: black;
 	font-size: xx-large;
+	margin-left: 4%;
+}
+
+h4 {
+	font-family: 'SfSquarehead';
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: 10vw;
+	line-height: 1.25;
+	padding-top: 5%;
+	padding-bottom: 8%;
+	margin-left: 4%;
 }
 
 button {
-	font-family: Calibre, Helvetica, Arial, sans-serif;
-	font-weight: 400;
-	font-size: larger;
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	font-size: 4vw;
 	letter-spacing: 0.02em;
 	background: none;
 	border: none;
+	margin-right: 0em;
+	margin-left: 1em;
+	margin-bottom: 4%;
 }
 
-h5{
-	font-family: Calibre, Helvetica, Arial, sans-serif;
-	font-weight: 400;
+
+h5 {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
 	letter-spacing: 0.1em;
 	color: black;
+	margin-left: 4%;
+	font-size: medium;
 }
 
-h6{
-	font-family: Calibre, Helvetica, Arial, sans-serif;
-	font-weight: 400;
+h6 {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
 	letter-spacing: 0.1em;
 	color: grey;
+	font-size: medium;
+	margin-left: 4%;
 }
 
-data{
-	font-family: sfsquarehead;
+time {
+	font-family: 'SfSquarehead';
 	font-weight: 400;
 	letter-spacing: 0.1em;
 	color: black;
+	margin-left: 4%;
 }
 
-p{
-	font-family: Calibre, Helvetica, Arial, sans-serif;
-	/* hoe zorg ik dat Calibre werkt? */
+p {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
 	font-weight: 400;
-	font-size: 1.125rem;
+	font-size: 1.125em;
 	line-height: 1.35;
+	margin-left: 4%;
+	margin-right: 4%;
 }
 
-img {
-	width: 45%;
+
+section img {
+	width: 92%;
+	height: auto;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: black;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+
+footer img:nth-child(1) {
+	width: 60%;
+	height: auto;
+	padding-top: 5%;
+}
+
+footer img:nth-child(2) {
+	width: 8%;
 	height: auto;
 }
 
-footer{
+footer img:nth-child(3) {
+	width: 10%;
+	height: auto;
+	margin-left: 8%;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 5em 5em 5em 5em 5em;
+	grid-template-rows: 10em 10em 10em 10em 10em 10em 10em;
+	
+	padding: 5%;
 	background-color: black;
+	width: 100%;
+}
+
+/* DUB FX */
+.grid-container article:nth-child(1) {
+	width: 6em;
+	height: auto;
+	grid-row: 1/2;
+	grid-column: 3/5;
+}
+
+/* THE AMITY AFFLICTION */
+.grid-container article:nth-child(2) {
+	width: 6em;
+	height: auto;
+	grid-row: 2/3;
+	grid-column: 2/3;
+}
+
+/* HEAVY */
+.grid-container article:nth-child(3) {
+	width: 6em;
+	height: auto;
+	grid-row: 2/3;
+	grid-column: 4/5;
+}
+
+/* COLIN BENDERS INVITES: BLAWAN LIVE / JAKOJAKO... */
+.grid-container article:nth-child(4) {
+	width: 6em;
+	height: auto;
+	grid-row: 3/4;
+	grid-column: 3/5;
+
+}
+
+/* THE SHERLOCKS */
+.grid-container article:nth-child(5) {
+	width: 6em;
+	height: auto;
+	grid-row: 4/5;
+	grid-column: 2/3;
+}
+
+/* ELIAS MAZIAN (LIVE) */
+.grid-container article:nth-child(6) {
+	width: 6em;
+	height: auto;
+	grid-row: 4/5;
+	grid-column: 4/5;
+}
+
+/* EXPO */
+.grid-container article:nth-child(7) {
+	width: 6em;
+	height: auto;
+	grid-row: 5/6;
+	grid-column: 3/5;
+}
+
+/* YAEJI */
+.grid-container article:nth-child(8) {
+	width: 6em;
+	height: auto;
+	grid-row: 6/7;
+	grid-column: 2/3;
+}
+
+/* MADISON MCFERRIN */
+.grid-container article:nth-child(9) {
+	width: 6em;
+	height: auto;
+	grid-row: 6/7;
+	grid-column: 4/5;
+}
+
+/* LEELA JAMES */
+.grid-container article:nth-child(10) {
+	width: 6em;
+	height: auto;
+	grid-row: 7/8;
+	grid-column: 3/5;
+}
+
+.grid-container time {
+	font-size: x-small;
+	line-height: 2em;
+	color: white;
+}
+
+.grid-container h3 {
+	font-size: smaller;
+	margin-top: 1%;
+	color: white;
+}
+
+.grid-container img{
+	width: 100%;
+}
+
+.grid-container article{
+	margin-top: 20%;
+}
+
+.highlights article {
+	display: flex;
+	flex-direction: row;
+}
+
+.highlights time {
+	font-size: small;
+	line-height: 4em;
+}
+
+.highlights img {
+	width: 92%;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 4%;
+}
+
+a[rel="agenda"] {
+	font-family: 'SfSquarehead';
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: 300%;
+	text-decoration: none;
+
+	display: inline-block;
+	padding-left: 4%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.containernav {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.containernav a {
+	line-height: 1.6em;
+	font-size: 180%;
+	margin-left: -16%;
+}
+
+.containernav h2 {
+	line-height: 1.5em;
+}
+
+header {
+	margin-left: 4%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+.justAnnounced {
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	position: relative;
+}
+
+.justAnnounced time {
+	font-size: x-small;
+
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	margin-top: 5%;
+	margin-right: 4%;
+}
+
+.nextUp {
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	position: relative;
+}
+
+.nextUp time {
+	font-size: x-small;
+
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	margin-top: 5%;
+	margin-right: 4%;
+}
+
+section {
+	margin-bottom: 10%;
+}
+
+hr {
+	height: 1px;
+	background-color: black;
+	border: none;
+}
+
+.highlights h2 {
+	margin-left: 4%;
+	margin-top: 0%;
+}
+
+.agenda_arrow {
+	width: 2.5em;
+	margin-left: 3%;
+}
+
+.leesmeer_arrow {
+	width: 1em;
+	margin-left: 3%;
+	margin-top: 10%;
+}
+
+.leesmeer_button {
+	margin-left: 4%;
+	font-size: large;
+	margin-top: -3%;
+	padding-bottom: 40%;
+	text-decoration: none;
+}
+
+img[alt="young creatives"] {
+	margin-top: 10%;
+}
+
+.youngcreatives_h1 {
+	font-family: 'SfSquarehead';
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: 12vw;
+	margin-left: 4%;
+	margin-top: 9%;
+	margin-bottom: 9%;
+}
+
+.youngcreatives_p {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.2;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 7%;
+	margin-bottom: 20%;
+	color: gray;
+}
+
+.youncreatives_section article {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 10%;
+}
+
+.youncreatives_section h5 {
+	font-size: x-large;
+	margin-top: 6%;
+}
+
+.youngcreatives_arrow {
+	align-self: flex-end;
+
+	width: 1em;
+	margin-left: 3%;
+}
+
+.cineradar {
+	display: grid;
+	grid-template-columns: 14.5em 8.6em;
+	grid-template-rows: 3em 3em 3em 3em;
+	margin-bottom: 30%;
+}
+
+.cineradar hr {
+	grid-row: 2/3;
+	grid-column: 1/3;
+	margin-left: 2%;
+}
+
+.cineradar h2 {
+	margin-left: 4%;
+	font-size: larger;
+	margin-top: 10%;
+	grid-row: 2/3;
+	grid-column: 1/2;
+
+}
+
+.cineradar h6 {
+	margin-left: 4%;
+	margin-top: 2%;
+	font-size: small;
+	grid-row: 3/4;
+	grid-column: 1/2;
+}
+
+.cineradar time {
+	font-size: x-large;
+	margin-left: 4%;
+	grid-row: 1/2;
+	grid-column: 1/2;
+}
+
+.cineradar h4 {
+	font-size: x-small;
+	display: inline-block;
+	border: 1px solid black;
+	text-align: center;
+	width: fit-content;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 10%;
+	grid-row: 4/5;
+	grid-column: 1/2;
+}
+
+.cineradar img {
+	height: auto;
+	grid-row: 2/3;
+	grid-column: 2/3;
+	margin-top: 18%;
+	margin-left: 30%;
+	width: 60%;
+	height: auto;
+}
+
+.over_yc p:nth-child(1) {
+	margin: 0;
+	margin-left: 4%;
+}
+
+.over_yc p {
+	margin-bottom: 10%;
+}
+
+.young-creatives-header {
+	margin: 0;
+	width: 100%;
+}
+
+section>hr {
+	margin-left: 5%;
+	margin-right: 5%;
 }
