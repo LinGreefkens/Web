@@ -10,10 +10,6 @@
 }
 
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -22,9 +18,6 @@
 	--color-text: #111;
 	--color-background: #eee;
 }
-
-
-
 
 
 /****************/
@@ -87,7 +80,8 @@ h4 {
 	margin-left: 4%;
 }
 
-button {
+.button_justAnnounced,
+.button_nextUp {
 	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
 	font-size: 4vw;
 	letter-spacing: 0.02em;
@@ -126,7 +120,7 @@ time {
 p {
 	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
 	font-weight: 400;
-	font-size: 1.125em;
+	font-size: 1.1em;
 	line-height: 1.35;
 	margin-left: 4%;
 	margin-right: 4%;
@@ -153,19 +147,20 @@ footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	z-index: 1000;
+	z-index: 2000;
 }
 
 
 footer img:nth-child(1) {
-	width: 60%;
-	height: auto;
-	padding-top: 5%;
+	width: auto;
+	height: 50%;
+	padding-top: 8%;
 }
 
 footer img:nth-child(2) {
 	width: 8%;
 	height: auto;
+	margin-left: 70%;
 }
 
 footer img:nth-child(3) {
@@ -174,95 +169,109 @@ footer img:nth-child(3) {
 	margin-left: 8%;
 }
 
-.grid-container{
+.grid-container {
 	display: grid;
 	grid-template-columns: 5em 5em 5em 5em 5em;
-	grid-template-rows: 10em 10em 10em 10em 10em 10em 10em;
-	
+	grid-template-rows: 12em 12em 15em 13em 12em 12em 15em 11em;
+
 	padding: 5%;
-	background-color: black;
+	background-image: url('../images/background.jpg');
+	background-size: cover;
 	width: 100%;
+	height: auto;
+	padding-top: 10%;
+	padding-bottom: 20%;
 }
 
 /* DUB FX */
 .grid-container article:nth-child(1) {
-	width: 6em;
+	width: 12em;
 	height: auto;
 	grid-row: 1/2;
-	grid-column: 3/5;
+	grid-column: 2/5;
 }
 
 /* THE AMITY AFFLICTION */
 .grid-container article:nth-child(2) {
-	width: 6em;
+	width: 11em;
 	height: auto;
 	grid-row: 2/3;
-	grid-column: 2/3;
+	grid-column: 1/4;
 }
 
 /* HEAVY */
 .grid-container article:nth-child(3) {
-	width: 6em;
+	width: 12em;
 	height: auto;
 	grid-row: 2/3;
-	grid-column: 4/5;
+	grid-column: 3/6;
+	padding-left: 20%;
+	padding-top: 20%;
 }
 
 /* COLIN BENDERS INVITES: BLAWAN LIVE / JAKOJAKO... */
 .grid-container article:nth-child(4) {
-	width: 6em;
+	width: 12em;
 	height: auto;
 	grid-row: 3/4;
-	grid-column: 3/5;
-
+	grid-column: 2/5;
+	padding-top: 25%;
 }
 
 /* THE SHERLOCKS */
 .grid-container article:nth-child(5) {
-	width: 6em;
+	width: 11em;
 	height: auto;
 	grid-row: 4/5;
-	grid-column: 2/3;
+	grid-column: 1/4;
+	padding-top: 15%;
 }
 
 /* ELIAS MAZIAN (LIVE) */
 .grid-container article:nth-child(6) {
-	width: 6em;
+	width: 12em;
 	height: auto;
 	grid-row: 4/5;
-	grid-column: 4/5;
+	grid-column: 3/6;
+	padding-left: 20%;
+	padding-top: 50%;
 }
 
 /* EXPO */
 .grid-container article:nth-child(7) {
-	width: 6em;
+	width: 12em;
 	height: auto;
 	grid-row: 5/6;
-	grid-column: 3/5;
+	grid-column: 2/5;
+	padding-top: 35%;
 }
 
 /* YAEJI */
 .grid-container article:nth-child(8) {
-	width: 6em;
+	width: 11em;
 	height: auto;
 	grid-row: 6/7;
-	grid-column: 2/3;
+	grid-column: 1/4;
+	padding-top: 60%;
 }
 
 /* MADISON MCFERRIN */
 .grid-container article:nth-child(9) {
-	width: 6em;
+	width: 13em;
 	height: auto;
 	grid-row: 6/7;
-	grid-column: 4/5;
+	grid-column: 3/6;
+	padding-left: 20%;
+	padding-top: 90%;
 }
 
 /* LEELA JAMES */
 .grid-container article:nth-child(10) {
-	width: 6em;
+	width: 12em;
 	height: auto;
 	grid-row: 7/8;
-	grid-column: 3/5;
+	grid-column: 2/5;
+	padding-top: 85%;
 }
 
 .grid-container time {
@@ -277,17 +286,8 @@ footer img:nth-child(3) {
 	color: white;
 }
 
-.grid-container img{
+.grid-container img {
 	width: 100%;
-}
-
-.grid-container article{
-	margin-top: 20%;
-}
-
-.highlights article {
-	display: flex;
-	flex-direction: row;
 }
 
 .highlights time {
@@ -378,9 +378,12 @@ section {
 }
 
 hr {
+	width: 92%;
+	margin: 0;
+	border: none;
 	height: 1px;
 	background-color: black;
-	border: none;
+	margin-left: 4%;
 }
 
 .highlights h2 {
@@ -436,7 +439,7 @@ img[alt="young creatives"] {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 
 .youncreatives_section h5 {
@@ -449,6 +452,7 @@ img[alt="young creatives"] {
 
 	width: 1em;
 	margin-left: 3%;
+	margin-bottom: 1.5%;
 }
 
 .cineradar {
@@ -456,6 +460,7 @@ img[alt="young creatives"] {
 	grid-template-columns: 14.5em 8.6em;
 	grid-template-rows: 3em 3em 3em 3em;
 	margin-bottom: 30%;
+	margin-left: 4%;
 }
 
 .cineradar hr {
@@ -517,7 +522,7 @@ img[alt="young creatives"] {
 }
 
 .over_yc p {
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
 
 .young-creatives-header {
@@ -525,7 +530,142 @@ img[alt="young creatives"] {
 	width: 100%;
 }
 
-section>hr {
-	margin-left: 5%;
-	margin-right: 5%;
+.grid_youngcreatives {
+	display: grid;
+	grid-template-columns: 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em;
+	grid-template-rows: 9em 10em 12em;
+	grid-gap: 0.5rem;
+
+	padding-bottom: 30%;
+}
+
+.grid_youngcreatives img:nth-child(1) {
+	width: 17em;
+	height: auto;
+	grid-row: 1/2;
+	grid-column: 3/11;
+}
+
+.grid_youngcreatives img:nth-child(4) {
+	width: 18em;
+	height: auto;
+	grid-row: 2/3;
+	grid-column: 2/10;
+}
+
+.grid_youngcreatives img:nth-child(2) {
+	width: 12em;
+	height: auto;
+	grid-row: 3/4;
+	grid-column: 1/6;
+	margin: 0;
+}
+
+.grid_youngcreatives img:nth-child(5) {
+	width: 15em;
+	height: auto;
+	grid-row: 3/4;
+	grid-column: 5/13;
+
+	padding-left: 10%;
+	padding-top: 11%;
+}
+
+.grid_youngcreatives img:nth-child(3) {
+	width: 18em;
+	height: auto;
+	grid-row: 4/5;
+	grid-column: 2/10;
+
+	padding-left: 10%;
+}
+
+.youncreatives_section>article>section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.youncreatives_section>article>p {
+	width: 95%;
+}
+
+.hidden {
+	display: none;
+}
+
+ul.hamburger-menu {
+	background-color: black;
+	height: 100vh;
+	display: none;
+}
+
+ul>li:nth-child(1) {
+	padding-top: 10%;
+}
+
+ul>section>li:nth-child(1) {
+	padding-top: 10%;
+}
+
+ul li a {
+	font-family: 'calibre';
+	letter-spacing: 0.1em;
+	font-size: 1.8em;
+	color: white;
+	text-decoration: none;
+	padding-left: 4%;
+	display: inline-block;
+    width: 1.2em;
+}
+
+.socials {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: center;
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+ul a[rel="agenda"] {
+	font-family: 'calibre';
+	letter-spacing: 0.1em;
+	font-size: 1.8em;
+	color: white;
+	text-decoration: none;
+	padding-left: 4%;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.button_NL,
+.button_EN {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	font-size: 4vw;
+	letter-spacing: 0.02em;
+	color: white;
+	background: none;
+	border: none;
+	margin-right: 0em;
+	margin-left: 1em;
+	margin-bottom: 4%;
+}
+
+ul.hamburger-menu.active {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+.menuklein{
+	font-size: medium;
+	white-space: nowrap;
+	padding-top: 3%;
 }
