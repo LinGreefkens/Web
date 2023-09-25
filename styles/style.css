@@ -38,7 +38,7 @@ body {
 
 
 h1 {
-	font-family: 'SfSquarehead';
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
 	letter-spacing: 0.1em;
 	color: black;
 	font-size: 14.8vw;
@@ -62,7 +62,7 @@ a {
 }
 
 h3 {
-	font-family: 'SfSquarehead';
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
 	letter-spacing: 0.1em;
 	color: black;
 	font-size: xx-large;
@@ -70,7 +70,7 @@ h3 {
 }
 
 h4 {
-	font-family: 'SfSquarehead';
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
 	letter-spacing: 0.1em;
 	color: black;
 	font-size: 10vw;
@@ -110,7 +110,7 @@ h6 {
 }
 
 time {
-	font-family: 'SfSquarehead';
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
 	font-weight: 400;
 	letter-spacing: 0.1em;
 	color: black;
@@ -303,7 +303,7 @@ footer img:nth-child(3) {
 }
 
 a[rel="agenda"] {
-	font-family: 'SfSquarehead';
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
 	letter-spacing: 0.1em;
 	color: black;
 	font-size: 300%;
@@ -415,7 +415,7 @@ img[alt="young creatives"] {
 }
 
 .youngcreatives_h1 {
-	font-family: 'SfSquarehead';
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
 	letter-spacing: 0.1em;
 	color: black;
 	font-size: 12vw;
@@ -609,7 +609,7 @@ ul>section>li:nth-child(1) {
 }
 
 ul li a {
-	font-family: 'calibre';
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
 	letter-spacing: 0.1em;
 	font-size: 1.8em;
 	color: white;
@@ -630,7 +630,7 @@ ul li a {
 }
 
 ul a[rel="agenda"] {
-	font-family: 'calibre';
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
 	letter-spacing: 0.1em;
 	font-size: 1.8em;
 	color: white;
