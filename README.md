@@ -66,22 +66,18 @@ Responsive
 </details>
 
 
-<!-- 
 ## Breakdownschets (week 1)
 
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### pagina 1: 
+  <img src="readme-images/Melkweg-breakdown schets_Home.png" width="375px" alt="breakdown van pagina 1">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### pagina 2: 
+  <img src="readme-images/Melkweg-breakdown schets_YoungCreatives.png" width="375px" alt="bbreakdown van pagina 2">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
-</details> -->
+</details>
 
 
 
@@ -97,11 +93,11 @@ Responsive
   Wat ik op dit moment lastig vind is het opbouwen van het Grid. Het is namelijk nogal een complexe vormgeving die niet op gelijke rijen en kollomen staat. Ook het responsive maken van sommige onderdelen lukt nog niet zo makkelijk, zoals bijvoorbeeld de h1. Waar ik ook wel een beetje tegenop zie is een animatie maken van de H1. Maar ik ga mijn best doen.
 
   Screenshots responsive H1:
-  <img src="images/screenshot_h1_iphone" alt="screenshot h1 iphone">
-  <img src="images/screenshot_h1_desktop" alt="screenshot h1 desktop">
+  <img src="readme-images/screenshot_h1_iphone" alt="screenshot h1 iphone">
+  <img src="readme-images/screenshot_h1_desktop" alt="screenshot h1 desktop">
 
   Screenshot Grid:
-  <img src="images/screenshot_grid" alt="screenshot Grid">
+  <img src="readme-images/screenshot_grid" alt="screenshot Grid">
 
 
 
@@ -118,10 +114,9 @@ Responsive
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - mijn vragen zijn beantwoord en ik kan weer verder met html css
+    bijvoorbeeld: mijn grid lukte niet en daar kreeg ik tips bij. 
+    en de knoppen op de home page lukte niet met Javascript. ook hier kreeg ik tips voor om weer verder te kunnen.
 
 </details>
 
@@ -151,10 +146,8 @@ Responsive
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - pauline heeft mijn code nagekeken of alles netjes was. dat was, ik heb geen errors
+  - mijn lettertype is op Safari niet zichtbaar, maar hier heb ik geen oplossing voor gevonden (samen naar gekeken met Danny en Thije)
 
 </details>
 
@@ -168,7 +161,16 @@ Responsive
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+hij geeft veel wel duidelijk aan. 
+
+alleen is mijn alternatieve tekst niet heel duidelijk. het geeft nog niet aan wat er echt te zien is op de afbeeldingen.
+
+de tekst 'gratis voor jaarleden' op pagina 2 is nu een H4. 
+maar in de echte website is dat een knop. 
+ik moet hier dus ook een knop van maken. anders leest de screenreader het verkeerd voor.
+  <img src="readme-images/gratisvoorjaarleden.png" alt="gratis voor jaarleden is een H4 ipv link screenshot">
+
+ook wordt mijn footer niet opgelezen.
 
 </details>
 
@@ -233,7 +235,6 @@ Responsive
 
 
 
-
 ## Bronnenlijst
 
 <details open>
@@ -243,8 +244,13 @@ Responsive
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.w3schools.com/tags/att_time_datetime.asp --> datum aangeven als datum ipv tekst
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face --> eigen lettertype toevoegen
+  3. https://www.w3schools.com/cssref/css3_pr_mediaquery.php --> responsive maken met mediaquery
+  4. https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-width-for-mobile-responsive-design/ --> formaten voor een mediaquery
+  5. https://gathering.tweakers.net/forum/list_messages/1095246 --> footer vastzetten
+  6. https://www.w3schools.com/css/css_grid.asp --> gridd css
+  
+  en ik heb veel vragen gesteld aan ChatGPT
 
 </details>

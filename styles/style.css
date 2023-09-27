@@ -20,9 +20,6 @@
 }
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
 @font-face {
 	font-family: 'SfSquarehead';
 	src: url('../fonts/SfSquarehead.woff2') format(woff2);
@@ -31,348 +28,661 @@
 	src: url('../fonts/CalibreRegular.woff') format(woff);
 }
 
-body {
-	max-width: 100%;
-	overflow-x: hidden;
+/****************/
+/* MOBILE */
+/****************/
+@media only screen and (max-width: 480px) {
+	body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+	/* TEKSTUEEL */
+	h1 {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		font-size: 14.8vw;
+	}
+
+	h2 {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.02em;
+		line-height: 1.2em;
+		color: black;
+		font-size: 180%;
+		margin-top: 4%;
+	}
+
+	h3 {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		font-size: xx-large;
+		margin-left: 4%;
+	}
+
+	h4 {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		font-size: 10vw;
+		line-height: 1.25;
+		padding-top: 5%;
+		padding-bottom: 8%;
+		margin-left: 4%;
+	}
+
+	h5 {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		margin-left: 4%;
+		font-size: medium;
+	}
+
+	h6 {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.1em;
+		color: grey;
+		font-size: medium;
+		margin-left: 4%;
+	}
+
+	p {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		font-weight: 400;
+		font-size: 1.1em;
+		line-height: 1.35;
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+
+	a {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.02em;
+		color: black;
+		font-size: 180%;
+	}
+
+	time {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		color: black;
+		margin-left: 4%;
+	}
+
+	a[rel="agenda"] {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		font-size: 300%;
+		text-decoration: none;
+
+		display: inline-block;
+		padding-left: 4%;
+		padding-right: 10%;
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+
+	/* header + navigatie bovenin op de homepage */
+	.containernav {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+
+	.containernav a {
+		line-height: 1.6em;
+		font-size: 180%;
+		margin-left: -16%;
+	}
+
+	.containernav h2 {
+		line-height: 1.5em;
+	}
+
+	header {
+		margin-left: 4%;
+		margin-top: 5%;
+		margin-bottom: 2%;
+	}
+
+	.menu-zichtbaar-desktop{
+		display: none;
+	}
+
+	/* grid op de homepage */
+	.grid-container {
+		display: grid;
+		grid-template-columns: 5em 5em 5em 5em 5em;
+		grid-template-rows: 12em 12em 15em 13em 12em 12em 15em 11em;
+
+		padding: 5%;
+		background-image: url('../images/background.jpg');
+		background-size: cover;
+		width: 100%;
+		height: auto;
+		padding-top: 10%;
+		padding-bottom: 20%;
+	}
+
+	.grid-container article:nth-child(1) {
+		/* DUB FX */
+		width: 12em;
+		height: auto;
+		grid-row: 1/2;
+		grid-column: 2/5;
+	}
+
+	.grid-container article:nth-child(2) {
+		/* THE AMITY AFFLICTION */
+		width: 11em;
+		height: auto;
+		grid-row: 2/3;
+		grid-column: 1/4;
+	}
+
+	.grid-container article:nth-child(3) {
+		/* HEAVY */
+		width: 12em;
+		height: auto;
+		grid-row: 2/3;
+		grid-column: 3/6;
+		padding-left: 20%;
+		padding-top: 20%;
+	}
+
+	.grid-container article:nth-child(4) {
+		/* COLIN BENDERS INVITES: BLAWAN LIVE / JAKOJAKO... */
+		width: 12em;
+		height: auto;
+		grid-row: 3/4;
+		grid-column: 2/5;
+		padding-top: 25%;
+	}
+
+	.grid-container article:nth-child(5) {
+		/* THE SHERLOCKS */
+		width: 11em;
+		height: auto;
+		grid-row: 4/5;
+		grid-column: 1/4;
+		padding-top: 15%;
+	}
+
+	.grid-container article:nth-child(6) {
+		/* ELIAS MAZIAN (LIVE) */
+		width: 12em;
+		height: auto;
+		grid-row: 4/5;
+		grid-column: 3/6;
+		padding-left: 20%;
+		padding-top: 50%;
+	}
+
+	.grid-container article:nth-child(7) {
+		/* EXPO */
+		width: 12em;
+		height: auto;
+		grid-row: 5/6;
+		grid-column: 2/5;
+		padding-top: 35%;
+	}
+
+	.grid-container article:nth-child(8) {
+		/* YAEJI */
+		width: 11em;
+		height: auto;
+		grid-row: 6/7;
+		grid-column: 1/4;
+		padding-top: 60%;
+	}
+
+	.grid-container article:nth-child(9) {
+		/* MADISON MCFERRIN */
+		width: 13em;
+		height: auto;
+		grid-row: 6/7;
+		grid-column: 3/6;
+		padding-left: 20%;
+		padding-top: 90%;
+	}
+
+	.grid-container article:nth-child(10) {
+		/* LEELA JAMES */
+		width: 12em;
+		height: auto;
+		grid-row: 7/8;
+		grid-column: 2/5;
+		padding-top: 85%;
+	}
+
+	.grid-container time {
+		font-size: x-small;
+		line-height: 2em;
+		color: white;
+	}
+
+	.grid-container h3 {
+		font-size: smaller;
+		margin-top: 1%;
+		color: white;
+	}
+
+	.grid-container img {
+		width: 100%;
+	}
+
+
+	/* knoppen just announced + next up */
+	.button_justAnnounced,
+	.button_nextUp {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		font-size: 4vw;
+		letter-spacing: 0.02em;
+		background: none;
+		border: none;
+		margin-right: 0em;
+		margin-left: 1em;
+		margin-bottom: 4%;
+	}
+
+	.justAnnounced {
+		border-bottom: 1px solid #DDDDDD;
+		padding-bottom: 1em;
+		padding-top: 1em;
+		position: relative;
+	}
+
+	.justAnnounced time {
+		font-size: x-small;
+
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		margin-top: 5%;
+		margin-right: 4%;
+	}
+
+	.nextUp {
+		border-bottom: 1px solid #DDDDDD;
+		padding-bottom: 1em;
+		padding-top: 1em;
+		position: relative;
+	}
+
+	.nextUp time {
+		font-size: x-small;
+
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		margin-top: 5%;
+		margin-right: 4%;
+	}
+
+	/* highlights */
+	.highlights time {
+		font-size: small;
+		line-height: 4em;
+	}
+
+	.highlights img {
+		width: 92%;
+		margin-left: 4%;
+		margin-right: 4%;
+		margin-top: 4%;
+	}
+
+	.highlights h2 {
+		margin-left: 4%;
+		margin-top: 0%;
+	}
+
+	/* styling van alle afbeeldingen (breedte) */
+	section img {
+		width: 92%;
+		height: auto;
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+
+	/* agenda */
+	.agenda_arrow {
+		width: 2.5em;
+		margin-left: 3%;
+	}
+
+	/* young creatives */
+	.leesmeer_arrow {
+		width: 1em;
+		margin-left: 3%;
+		margin-top: 10%;
+	}
+
+	.leesmeer_button {
+		margin-left: 4%;
+		font-size: large;
+		margin-top: -3%;
+		padding-bottom: 40%;
+		text-decoration: none;
+	}
+
+	img[alt="young creatives"] {
+		margin-top: 10%;
+	}
+
+	.youngcreatives_h1 {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		font-size: 12vw;
+		margin-left: 4%;
+		margin-top: 9%;
+		margin-bottom: 9%;
+	}
+
+	.youngcreatives_p {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		font-size: 1.4em;
+		line-height: 1.2;
+		margin-left: 4%;
+		margin-right: 4%;
+		margin-top: 7%;
+		margin-bottom: 20%;
+		color: gray;
+	}
+
+	.youncreatives_section article {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 5%;
+	}
+
+	.youncreatives_section h5 {
+		font-size: x-large;
+		margin-top: 6%;
+	}
+
+	.youngcreatives_arrow {
+		align-self: flex-end;
+
+		width: 1em;
+		margin-left: 3%;
+		margin-bottom: 1.5%;
+	}
+
+	/* young creatives pagina img */
+	.young-creatives-header {
+		margin: 0;
+		width: 100%;
+	}
+
+	/* young creatives articles */
+	.youncreatives_section>article>section {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.youncreatives_section>article>p {
+		width: 95%;
+	}
+
+	/* cineradar */
+	.cineradar {
+		display: grid;
+		grid-template-columns: 14.5em 8.6em;
+		grid-template-rows: 3em 3em 3em 3em;
+		margin-bottom: 30%;
+		margin-left: 4%;
+	}
+
+	.cineradar hr {
+		grid-row: 2/3;
+		grid-column: 1/3;
+		margin-left: 2%;
+	}
+
+	.cineradar h2 {
+		margin-left: 4%;
+		font-size: larger;
+		margin-top: 10%;
+		grid-row: 2/3;
+		grid-column: 1/2;
+
+	}
+
+	.cineradar h6 {
+		margin-left: 4%;
+		margin-top: 2%;
+		font-size: small;
+		grid-row: 3/4;
+		grid-column: 1/2;
+	}
+
+	.cineradar time {
+		font-size: x-large;
+		margin-left: 4%;
+		grid-row: 1/2;
+		grid-column: 1/2;
+	}
+
+	.cineradar a {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		letter-spacing: 0.1em;
+		line-height: 1.25;
+		padding-top: 3%;
+		padding-bottom: 8%;
+		margin-left: 4%;
+		
+		font-size: x-small;
+		display: inline-block;
+		border: 1px solid black;
+		text-align: center;
+		width: fit-content;
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-top: 10%;
+		grid-row: 4/5;
+		grid-column: 1/2;
+	}
+
+	.cineradar img {
+		height: auto;
+		grid-row: 2/3;
+		grid-column: 2/3;
+		margin-top: 18%;
+		margin-left: 30%;
+		width: 60%;
+		height: auto;
+	}
+
+	/* over young creatives */
+	.over_yc p:nth-child(1) {
+		margin: 0;
+		margin-left: 4%;
+	}
+
+	.over_yc p {
+		margin-bottom: 5%;
+	}
+
+	/* Grid afbeeldingen young creatives */
+	.grid_youngcreatives {
+		display: grid;
+		grid-template-columns: 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em;
+		grid-template-rows: 9em 10em 12em;
+		grid-gap: 0.5rem;
+
+		padding-bottom: 30%;
+	}
+
+	.grid_youngcreatives img:nth-child(1) {
+		width: 17em;
+		height: auto;
+		grid-row: 1/2;
+		grid-column: 3/11;
+	}
+
+	.grid_youngcreatives img:nth-child(4) {
+		width: 18em;
+		height: auto;
+		grid-row: 2/3;
+		grid-column: 2/10;
+	}
+
+	.grid_youngcreatives img:nth-child(2) {
+		width: 12em;
+		height: auto;
+		grid-row: 3/4;
+		grid-column: 1/6;
+		margin: 0;
+	}
+
+	.grid_youngcreatives img:nth-child(5) {
+		width: 15em;
+		height: auto;
+		grid-row: 3/4;
+		grid-column: 5/13;
+
+		padding-left: 10%;
+		padding-top: 11%;
+	}
+
+	.grid_youngcreatives img:nth-child(3) {
+		width: 18em;
+		height: auto;
+		grid-row: 4/5;
+		grid-column: 2/10;
+
+		padding-left: 10%;
+	}
+
+
+	/* footer */
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: black;
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+		padding-left: 10%;
+		padding-right: 10%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		z-index: 2000;
+	}
+
+	footer img:nth-child(1) {
+		width: auto;
+		height: 50%;
+		padding-top: 8%;
+	}
+
+	footer img:nth-child(2) {
+		width: 8%;
+		height: auto;
+		margin-left: 70%;
+	}
+
+	footer img:nth-child(3) {
+		width: 10%;
+		height: auto;
+		margin-left: 8%;
+	}
+
+	/* hamburger menu */
+	.hidden {
+		display: none;
+	}
+
+	ul.hamburger-menu {
+		background-color: black;
+		height: 100vh;
+		display: none;
+	}
+
+	ul>li:nth-child(1) {
+		padding-top: 10%;
+	}
+
+	ul>section>li:nth-child(1) {
+		padding-top: 10%;
+	}
+
+	ul li a {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.1em;
+		font-size: 1.8em;
+		color: white;
+		text-decoration: none;
+		padding-left: 4%;
+		display: inline-block;
+		width: 1.2em;
+	}
+
+	.socials {
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 8%;
+		padding-bottom: 8%;
+	}
+
+	ul a[rel="agenda"] {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.1em;
+		font-size: 1.8em;
+		color: white;
+		text-decoration: none;
+		padding-left: 4%;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+	.button_NL,
+	.button_EN {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		font-size: 4vw;
+		letter-spacing: 0.02em;
+		color: white;
+		background: none;
+		border: none;
+		margin-right: 0em;
+		margin-left: 1em;
+		margin-bottom: 4%;
+	}
+
+	ul.hamburger-menu.active {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1000;
+	}
+
+	.menuklein {
+		font-size: medium;
+		white-space: nowrap;
+		padding-top: 3%;
+	}
 }
 
-
-h1 {
-	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-	letter-spacing: 0.1em;
-	color: black;
-	font-size: 14.8vw;
-}
-
-h2 {
-	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-	letter-spacing: 0.02em;
-	line-height: 1.2em;
-	color: black;
-	font-size: 180%;
-	margin-top: 4%;
-}
-
-
-a {
-	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-	letter-spacing: 0.02em;
-	color: black;
-	font-size: 180%;
-}
-
-h3 {
-	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-	letter-spacing: 0.1em;
-	color: black;
-	font-size: xx-large;
-	margin-left: 4%;
-}
-
-h4 {
-	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-	letter-spacing: 0.1em;
-	color: black;
-	font-size: 10vw;
-	line-height: 1.25;
-	padding-top: 5%;
-	padding-bottom: 8%;
-	margin-left: 4%;
-}
-
-.button_justAnnounced,
-.button_nextUp {
-	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-	font-size: 4vw;
-	letter-spacing: 0.02em;
-	background: none;
-	border: none;
-	margin-right: 0em;
-	margin-left: 1em;
-	margin-bottom: 4%;
-}
-
-
-h5 {
-	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-	letter-spacing: 0.1em;
-	color: black;
-	margin-left: 4%;
-	font-size: medium;
-}
-
-h6 {
-	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-	letter-spacing: 0.1em;
-	color: grey;
-	font-size: medium;
-	margin-left: 4%;
-}
-
-time {
-	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-	font-weight: 400;
-	letter-spacing: 0.1em;
-	color: black;
-	margin-left: 4%;
-}
-
-p {
-	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-	font-weight: 400;
-	font-size: 1.1em;
-	line-height: 1.35;
-	margin-left: 4%;
-	margin-right: 4%;
-}
-
-
-section img {
-	width: 92%;
-	height: auto;
-	margin-left: 4%;
-	margin-right: 4%;
-}
-
-footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background-color: black;
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-	padding-left: 10%;
-	padding-right: 10%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	z-index: 2000;
-}
-
-
-footer img:nth-child(1) {
-	width: auto;
-	height: 50%;
-	padding-top: 8%;
-}
-
-footer img:nth-child(2) {
-	width: 8%;
-	height: auto;
-	margin-left: 70%;
-}
-
-footer img:nth-child(3) {
-	width: 10%;
-	height: auto;
-	margin-left: 8%;
-}
-
-.grid-container {
-	display: grid;
-	grid-template-columns: 5em 5em 5em 5em 5em;
-	grid-template-rows: 12em 12em 15em 13em 12em 12em 15em 11em;
-
-	padding: 5%;
-	background-image: url('../images/background.jpg');
-	background-size: cover;
-	width: 100%;
-	height: auto;
-	padding-top: 10%;
-	padding-bottom: 20%;
-}
-
-/* DUB FX */
-.grid-container article:nth-child(1) {
-	width: 12em;
-	height: auto;
-	grid-row: 1/2;
-	grid-column: 2/5;
-}
-
-/* THE AMITY AFFLICTION */
-.grid-container article:nth-child(2) {
-	width: 11em;
-	height: auto;
-	grid-row: 2/3;
-	grid-column: 1/4;
-}
-
-/* HEAVY */
-.grid-container article:nth-child(3) {
-	width: 12em;
-	height: auto;
-	grid-row: 2/3;
-	grid-column: 3/6;
-	padding-left: 20%;
-	padding-top: 20%;
-}
-
-/* COLIN BENDERS INVITES: BLAWAN LIVE / JAKOJAKO... */
-.grid-container article:nth-child(4) {
-	width: 12em;
-	height: auto;
-	grid-row: 3/4;
-	grid-column: 2/5;
-	padding-top: 25%;
-}
-
-/* THE SHERLOCKS */
-.grid-container article:nth-child(5) {
-	width: 11em;
-	height: auto;
-	grid-row: 4/5;
-	grid-column: 1/4;
-	padding-top: 15%;
-}
-
-/* ELIAS MAZIAN (LIVE) */
-.grid-container article:nth-child(6) {
-	width: 12em;
-	height: auto;
-	grid-row: 4/5;
-	grid-column: 3/6;
-	padding-left: 20%;
-	padding-top: 50%;
-}
-
-/* EXPO */
-.grid-container article:nth-child(7) {
-	width: 12em;
-	height: auto;
-	grid-row: 5/6;
-	grid-column: 2/5;
-	padding-top: 35%;
-}
-
-/* YAEJI */
-.grid-container article:nth-child(8) {
-	width: 11em;
-	height: auto;
-	grid-row: 6/7;
-	grid-column: 1/4;
-	padding-top: 60%;
-}
-
-/* MADISON MCFERRIN */
-.grid-container article:nth-child(9) {
-	width: 13em;
-	height: auto;
-	grid-row: 6/7;
-	grid-column: 3/6;
-	padding-left: 20%;
-	padding-top: 90%;
-}
-
-/* LEELA JAMES */
-.grid-container article:nth-child(10) {
-	width: 12em;
-	height: auto;
-	grid-row: 7/8;
-	grid-column: 2/5;
-	padding-top: 85%;
-}
-
-.grid-container time {
-	font-size: x-small;
-	line-height: 2em;
-	color: white;
-}
-
-.grid-container h3 {
-	font-size: smaller;
-	margin-top: 1%;
-	color: white;
-}
-
-.grid-container img {
-	width: 100%;
-}
-
-.highlights time {
-	font-size: small;
-	line-height: 4em;
-}
-
-.highlights img {
-	width: 92%;
-	margin-left: 4%;
-	margin-right: 4%;
-	margin-top: 4%;
-}
-
-a[rel="agenda"] {
-	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-	letter-spacing: 0.1em;
-	color: black;
-	font-size: 300%;
-	text-decoration: none;
-
-	display: inline-block;
-	padding-left: 4%;
-	padding-right: 10%;
-	padding-top: 10%;
-	padding-bottom: 10%;
-}
-
-.containernav {
-	display: grid;
-	grid-template-columns: auto auto;
-}
-
-.containernav a {
-	line-height: 1.6em;
-	font-size: 180%;
-	margin-left: -16%;
-}
-
-.containernav h2 {
-	line-height: 1.5em;
-}
-
-header {
-	margin-left: 4%;
-	margin-top: 5%;
-	margin-bottom: 2%;
-}
-
-.justAnnounced {
-	border-bottom: 1px solid #DDDDDD;
-	padding-bottom: 1em;
-	padding-top: 1em;
-	position: relative;
-}
-
-.justAnnounced time {
-	font-size: x-small;
-
-	position: absolute;
-	right: 0;
-	top: 0;
-
-	margin-top: 5%;
-	margin-right: 4%;
-}
-
-.nextUp {
-	border-bottom: 1px solid #DDDDDD;
-	padding-bottom: 1em;
-	padding-top: 1em;
-	position: relative;
-}
-
-.nextUp time {
-	font-size: x-small;
-
-	position: absolute;
-	right: 0;
-	top: 0;
-
-	margin-top: 5%;
-	margin-right: 4%;
-}
-
+/* general styling */
 section {
 	margin-bottom: 10%;
 }
@@ -386,286 +696,454 @@ hr {
 	margin-left: 4%;
 }
 
-.highlights h2 {
-	margin-left: 4%;
-	margin-top: 0%;
-}
 
-.agenda_arrow {
-	width: 2.5em;
-	margin-left: 3%;
-}
+/****************/
+/* DESKTOP */
+/****************/
+@media only screen and (min-width: 481px) {
+	body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
 
-.leesmeer_arrow {
-	width: 1em;
-	margin-left: 3%;
-	margin-top: 10%;
-}
+	/* TEKSTUEEL */
+	h1 {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		font-size: 14.8vw;
+	}
 
-.leesmeer_button {
-	margin-left: 4%;
-	font-size: large;
-	margin-top: -3%;
-	padding-bottom: 40%;
-	text-decoration: none;
-}
+	h2 {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.02em;
+		line-height: 1.2em;
+		color: black;
+		font-size: 180%;
+		margin-top: 4%;
+	}
 
-img[alt="young creatives"] {
-	margin-top: 10%;
-}
+	h3 {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		font-size: xx-large;
+		margin-left: 4%;
+	}
 
-.youngcreatives_h1 {
-	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-	letter-spacing: 0.1em;
-	color: black;
-	font-size: 12vw;
-	margin-left: 4%;
-	margin-top: 9%;
-	margin-bottom: 9%;
-}
+	h4 {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		font-size: 5vw;
+		line-height: 1.25;
+		margin-left: 4%;
+	}
 
-.youngcreatives_p {
-	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-	font-size: 1.4em;
-	line-height: 1.2;
-	margin-left: 4%;
-	margin-right: 4%;
-	margin-top: 7%;
-	margin-bottom: 20%;
-	color: gray;
-}
+	h5 {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		margin-left: 4%;
+		font-size: medium;
+	}
 
-.youncreatives_section article {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-bottom: 5%;
-}
+	h6 {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.1em;
+		color: grey;
+		font-size: medium;
+		margin-left: 4%;
+	}
 
-.youncreatives_section h5 {
-	font-size: x-large;
-	margin-top: 6%;
-}
+	p {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		font-weight: 400;
+		font-size: 1.1em;
+		line-height: 1.35;
+		margin-left: 4%;
+		margin-right: 4%;
+	}
 
-.youngcreatives_arrow {
-	align-self: flex-end;
+	a {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.02em;
+		color: black;
+		font-size: 180%;
+	}
 
-	width: 1em;
-	margin-left: 3%;
-	margin-bottom: 1.5%;
-}
+	time {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		color: black;
+		margin-left: 4%;
+	}
 
-.cineradar {
-	display: grid;
-	grid-template-columns: 14.5em 8.6em;
-	grid-template-rows: 3em 3em 3em 3em;
-	margin-bottom: 30%;
-	margin-left: 4%;
-}
+	/* header + navigatie bovenin op de homepage */
+	header {
+		margin-left: 4%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
 
-.cineradar hr {
-	grid-row: 2/3;
-	grid-column: 1/3;
-	margin-left: 2%;
-}
+	nav {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
 
-.cineradar h2 {
-	margin-left: 4%;
-	font-size: larger;
-	margin-top: 10%;
-	grid-row: 2/3;
-	grid-column: 1/2;
+	.containernav {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
 
-}
+	nav a {
+		margin-right: 1%;
+	}
 
-.cineradar h6 {
-	margin-left: 4%;
-	margin-top: 2%;
-	font-size: small;
-	grid-row: 3/4;
-	grid-column: 1/2;
-}
+	.containernav h2 {
+		margin-right: 3%;
+		line-height: 0.5em;
+	}
 
-.cineradar time {
-	font-size: x-large;
-	margin-left: 4%;
-	grid-row: 1/2;
-	grid-column: 1/2;
-}
+	.containernav a {
+		width: 10em;
+	}
 
-.cineradar h4 {
-	font-size: x-small;
-	display: inline-block;
-	border: 1px solid black;
-	text-align: center;
-	width: fit-content;
-	padding-left: 5%;
-	padding-right: 5%;
-	margin-top: 10%;
-	grid-row: 4/5;
-	grid-column: 1/2;
-}
 
-.cineradar img {
-	height: auto;
-	grid-row: 2/3;
-	grid-column: 2/3;
-	margin-top: 18%;
-	margin-left: 30%;
-	width: 60%;
-	height: auto;
-}
+	.menu-zichtbaar-desktop{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding-left: 27%;
+	}
 
-.over_yc p:nth-child(1) {
-	margin: 0;
-	margin-left: 4%;
-}
+	.nav-link-klein{
+		text-decoration: none;
+		font-size: 1.3vw;
+		padding-left: 5%;
+	}
 
-.over_yc p {
-	margin-bottom: 5%;
-}
+	.menu-zichtbaar-desktop img{
+		width: 5%;
+		height: auto;
+		margin-left: 5%;
+	}
 
-.young-creatives-header {
-	margin: 0;
-	width: 100%;
-}
+	/* grid op de homepage */
+	.grid-container {
+		display: grid;
+		grid-template-columns: 16em 16em 16em 16em 16em;
+		grid-template-rows: 12em 12em 15em 13em 12em 12em 15em 11em 11em 17em;
 
-.grid_youngcreatives {
-	display: grid;
-	grid-template-columns: 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em;
-	grid-template-rows: 9em 10em 12em;
-	grid-gap: 0.5rem;
+		background-image: url('../images/background_desktop.png');
+		background-size: cover;
+		width: 100%;
+		height: auto;
+		padding-top: 10%;
+	}
 
-	padding-bottom: 30%;
-}
+	section.grid-container {
+		margin-bottom: 5%;
+	}
 
-.grid_youngcreatives img:nth-child(1) {
-	width: 17em;
-	height: auto;
-	grid-row: 1/2;
-	grid-column: 3/11;
-}
+	.grid-container article:nth-child(1) {
+		/* DUB FX */
+		width: 25em;
+		height: auto;
+		grid-row: 1/2;
+		grid-column: 3/6;
+		padding-left: 10%;
+	}
 
-.grid_youngcreatives img:nth-child(4) {
-	width: 18em;
-	height: auto;
-	grid-row: 2/3;
-	grid-column: 2/10;
-}
+	.grid-container article:nth-child(2) {
+		/* THE AMITY AFFLICTION */
+		width: 29em;
+		height: auto;
+		grid-row: 1/2;
+		grid-column: 1/4;
+		padding-top: 15%;
+		padding-left: 20%;
+	}
 
-.grid_youngcreatives img:nth-child(2) {
-	width: 12em;
-	height: auto;
-	grid-row: 3/4;
-	grid-column: 1/6;
-	margin: 0;
-}
+	.grid-container article:nth-child(3) {
+		/* HEAVY */
+		width: 33em;
+		height: auto;
+		grid-row: 1/2;
+		grid-column: 4/6;
+		padding-left: 40%;
+		padding-top: 25%;
+	}
 
-.grid_youngcreatives img:nth-child(5) {
-	width: 15em;
-	height: auto;
-	grid-row: 3/4;
-	grid-column: 5/13;
+	.grid-container article:nth-child(4) {
+		/* COLIN BENDERS INVITES: BLAWAN LIVE / JAKOJAKO... */
+		width: 25em;
+		height: auto;
+		grid-row: 3/4;
+		grid-column: 3/6;
+		padding-left: 10%;
+	}
 
-	padding-left: 10%;
-	padding-top: 11%;
-}
+	.grid-container article:nth-child(5) {
+		/* THE SHERLOCKS */
+		width: 29em;
+		height: auto;
+		grid-row: 3/4;
+		grid-column: 1/4;
+		padding-top: 30%;
+		padding-left: 20%;
+	}
 
-.grid_youngcreatives img:nth-child(3) {
-	width: 18em;
-	height: auto;
-	grid-row: 4/5;
-	grid-column: 2/10;
+	.grid-container article:nth-child(6) {
+		/* ELIAS MAZIAN (LIVE) */
+		width: 33em;
+		height: auto;
+		grid-row: 3/4;
+		grid-column: 4/6;
+		padding-left: 30%;
+		padding-top: 70%;
+	}
 
-	padding-left: 10%;
-}
+	.grid-container article:nth-child(7) {
+		/* EXPO */
+		width: 25em;
+		height: auto;
+		grid-row: 5/6;
+		grid-column: 3/4;
+		padding-top: 90%;
+		padding-left: 10%;
+	}
 
-.youncreatives_section>article>section {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
+	.grid-container article:nth-child(8) {
+		/* YAEJI */
+		width: 30em;
+		height: auto;
+		grid-row: 6/7;
+		grid-column: 1/4;
+		padding-top: 40%;
+		padding-left: 10%;
+	}
 
-.youncreatives_section>article>p {
-	width: 95%;
-}
+	.grid-container article:nth-child(9) {
+		/* MADISON MCFERRIN */
+		width: 33em;
+		height: auto;
+		grid-row: 6/7;
+		grid-column: 4/6;
+		padding-left: 30%;
+		padding-top: 60%;
+	}
 
-.hidden {
-	display: none;
-}
+	.grid-container article:nth-child(10) {
+		/* LEELA JAMES */
+		width: 25em;
+		height: auto;
+		grid-row: 8/9;
+		grid-column: 3/4;
+		padding-top: 85%;
+		padding-left: 10%;
+	}
 
-ul.hamburger-menu {
-	background-color: black;
-	height: 100vh;
-	display: none;
-}
+	.grid-container time {
+		font-size: x-small;
+		line-height: 2em;
+		color: white;
+	}
 
-ul>li:nth-child(1) {
-	padding-top: 10%;
-}
+	.grid-container h3 {
+		font-size: smaller;
+		margin-top: 1%;
+		color: white;
+	}
 
-ul>section>li:nth-child(1) {
-	padding-top: 10%;
-}
+	.grid-container img {
+		width: 100%;
+	}
 
-ul li a {
-	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-	letter-spacing: 0.1em;
-	font-size: 1.8em;
-	color: white;
-	text-decoration: none;
-	padding-left: 4%;
-	display: inline-block;
-    width: 1.2em;
-}
+	/* knoppen just announced + next up */
+	.button_justAnnounced,
+	.button_nextUp {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		font-size: 1vw;
+		letter-spacing: 0.02em;
+		background: none;
+		border: none;
+		margin-right: 0em;
+		margin-left: 4%;
+		margin-bottom: 1%;
+	}
 
-.socials {
-	width: 80%;
-	display: flex;
-	flex-direction: row;
-	justify-content:space-between;
-	align-items: center;
-	padding-top: 8%;
-	padding-bottom: 8%;
-}
+	.justAnnounced,
+	.nextUp {
+		border-bottom: 1px solid #DDDDDD;
+		padding-bottom: 2em;
+		padding-top: 2em;
+		position: relative;
+	}
 
-ul a[rel="agenda"] {
-	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-	letter-spacing: 0.1em;
-	font-size: 1.8em;
-	color: white;
-	text-decoration: none;
-	padding-left: 4%;
-	padding-right: 0;
-	padding-bottom: 0;
-	padding-top: 0;
-}
+	.justAnnounced h5,
+	.nextUp h5 {
+		font-size: x-large;
+	}
 
-.button_NL,
-.button_EN {
-	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-	font-size: 4vw;
-	letter-spacing: 0.02em;
-	color: white;
-	background: none;
-	border: none;
-	margin-right: 0em;
-	margin-left: 1em;
-	margin-bottom: 4%;
-}
+	.justAnnounced h4,
+	.nextUp h4 {
+		font-size: x-large;
+	}
 
-ul.hamburger-menu.active {
-	display: block;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1000;
-}
+	.justAnnounced time,
+	.nextUp time {
+		font-size: medium;
 
-.menuklein{
-	font-size: medium;
-	white-space: nowrap;
-	padding-top: 3%;
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		margin-top: 5%;
+		margin-right: 4%;
+	}
+
+
+	/* zorgt ervoor dat programma en highlights naast elkaar komen te staan */
+	.programmaenhighlights {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.programma {
+		width: 65%;
+	}
+
+	/* highlights */
+	.highlights {
+		width: 35%;
+		margin-top: 7%;
+		margin-right: 4%;
+	}
+
+	.highlights time {
+		font-size: small;
+		line-height: 4em;
+	}
+
+	.highlights img {
+		width: 92%;
+		margin-left: 4%;
+		margin-top: 4%;
+	}
+
+	.highlights h2 {
+		margin-left: 4%;
+		margin-top: 0%;
+	}
+
+	/* styling van alle afbeeldingen (breedte) */
+	section img {
+		width: 92%;
+		height: auto;
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+
+	/* agenda */
+	.agenda_title {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		font-size: 350%;
+		text-decoration: none;
+
+		display: inline-block;
+		padding-left: 4%;
+		padding-right: 10%;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+
+	.agenda_arrow {
+		width: 4em;
+		margin-left: 55%;
+	}
+
+	.agenda_hr {
+		width: 100%;
+		margin: 0;
+		border: none;
+		height: 1px;
+		background-color: black;
+	}
+
+	/* young creatives HOME */
+	.homeyoungcreatives {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.homeyoungcreatives_text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		margin-top: 7%;
+		margin-right: 4%;
+		padding-left: 5%;
+	}
+
+	.homeyoungcreatives_text h4 {
+		font-size: 4vw;
+	}
+
+	.homeyoungcreatives_text p {
+		font-size: 1.2vw;
+		margin-top: 10%;
+	}
+
+	.homeyoungcreatives img:nth-child(1) {
+		width: 50%;
+		height: 50%;
+		margin-top: 8%;
+	}
+
+	.leesmeer_arrow {
+		width: 1em;
+		margin-left: 3%;
+		margin-top: 10%;
+	}
+
+	.leesmeer_button {
+		margin-left: 4%;
+		font-size: large;
+		margin-top: -3%;
+		text-decoration: none;
+	}
+
+	/* footer */
+	footer {
+		display: none;
+	}
+
+	/* hamburger menu */
+	ul.hamburger-menu {
+		display: none;
+	}
+
+
+	/* general styling */
+	section {
+		margin-bottom: 10%;
+	}
+
+	hr {
+		width: 92%;
+		margin: 0;
+		border: none;
+		height: 1px;
+		background-color: black;
+		margin-left: 4%;
+	}
 }
