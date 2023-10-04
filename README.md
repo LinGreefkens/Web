@@ -40,11 +40,11 @@ Responsive
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home  
-  <img src="images/homescreen.png" width="375px" alt="Homescreen Melkweg">
+  <img src="readme-images/homescreen.png" width="375px" alt="Homescreen Melkweg">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Young Creatives 
-  <img src="images/youngcreatives.png" width="375px" alt="Young Creatives">
+  <img src="readme-images/youngcreatives.png" width="375px" alt="Young Creatives">
  
 </details>
 
