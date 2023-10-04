@@ -184,8 +184,13 @@ ook wordt mijn footer niet opgelezen.
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  ik had weer een lijstje met een aantal vragen voorbereid die ik afging met Danny.
+  gedurende het voortgangsgesprek werden mijn vragen beantwoord en daar kon ik weer mee verder.
 
+  Dit ging onder andere over het responsive maken, en hoe ik dit het best aan kon passen.
+  Javascript werkte niet op beide pagina's, hoe kan ik dit het beste aanpakken.
+  Mijn position Sticky werkt niet, hoe moet ik dit aanpakken. --> dit is inmiddels gelukt, maar nog niet optimaal.
+  ik ga hier mee aan de slag in de hoop dat het beter wordt.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -198,12 +203,13 @@ ook wordt mijn footer niet opgelezen.
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  ik had weer een lijstje met een aantal vragen voorbereid die ik afging met Danny.
+  gedurende het voortgangsgesprek werden mijn vragen beantwoord en daar kon ik weer mee verder.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Dit ging onder andere over het responsive maken, en hoe ik dit het best aan kon passen.
+  Javascript werkte niet op beide pagina's, hoe kan ik dit het beste aanpakken.
+  Mijn position Sticky werkt niet, hoe moet ik dit aanpakken. --> dit is inmiddels gelukt, maar nog niet optimaal.
+  ik ga hier mee aan de slag in de hoop dat het beter wordt.
 
 </details>
 
@@ -217,19 +223,24 @@ ook wordt mijn footer niet opgelezen.
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Desktop-Home.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Desktop-YoungCreatives.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Mobile-Home.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Mobile-YoungCreatives.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb heel veel nieuwe mogelijkheden ontdekt voor code. JavaScript vind ik wel nog erg lastig. 
+  Maar ik heb hier wel veel nieuws over geleerd.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Position sticky vond ik wel heel lastig in het begin. Ik dacht dat dit makkelijk met 1 regel CSS zou kunnen.
+  Maar dit was helaas niet zo. Ik heb hier veel tijd in gestoken, het werkt, maar niet zoals ik zou willen zoals het zou worden. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/WatGingMis-PositionSticky.png" width="375px" alt="bummer">
 </details>
 
 
@@ -250,6 +261,7 @@ ook wordt mijn footer niet opgelezen.
   4. https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-width-for-mobile-responsive-design/ --> formaten voor een mediaquery
   5. https://gathering.tweakers.net/forum/list_messages/1095246 --> footer vastzetten
   6. https://www.w3schools.com/css/css_grid.asp --> gridd css
+  7. https://developer.mozilla.org/en-US/docs/Web/CSS/position --> position sticky
   
   en ik heb veel vragen gesteld aan ChatGPT
 

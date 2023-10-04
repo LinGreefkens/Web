@@ -9,6 +9,7 @@ var searchIcons = document.querySelectorAll('.search-icon');
 
 hamburgerButton.addEventListener('click', function () {
   menu.classList.toggle('active');
+  console.log("button is clicked");
 
   // If menu is geopend dan is het kruisje actief + zoek icoontje weg
   if (menu.classList.contains('active')) {
@@ -21,76 +22,58 @@ hamburgerButton.addEventListener('click', function () {
   }
 });
 
+
+
 console.log(window.location.pathname);
-
-if (window.location.pathname === '/') {
+if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
   // /* Selecteer knop justAnnounced */
-var buttonJustAnnounced = document.querySelector(".button_justAnnounced");
-// /* Selecteer articles van justAnnounced */
-var articlesJustAnnounced = document.querySelector(".Articles_justAnnounced");
+  var buttonJustAnnounced = document.querySelector(".button_justAnnounced");
+  // /* Selecteer articles van justAnnounced */
+  var articlesJustAnnounced = document.querySelector(".Articles_justAnnounced");
 
-// /* Selecteer knop nextUp */
-var buttonNextUp = document.querySelector(".button_nextUp");
-// /* Selecteer articles nextUp */
-var articlesNextUp = document.querySelector(".Articles_nextUp");
+  // /* Selecteer knop nextUp */
+  var buttonNextUp = document.querySelector(".button_nextUp");
+  // /* Selecteer articles nextUp */
+  var articlesNextUp = document.querySelector(".Articles_nextUp");
 
-// Functie om knopkleuren bij te werken
-function updateButtonColors(selectedButton, otherButton) {
+  // Functie om knopkleuren bij te werken
+  function updateButtonColors(selectedButton, otherButton) {
     selectedButton.style.color = "black";
     otherButton.style.color = "grey";
-}
+  }
 
-// Standaard staat de "Just Announced" knop geselecteerd
-articlesJustAnnounced.classList.remove("hidden");
-articlesNextUp.classList.add("hidden");
-updateButtonColors(buttonJustAnnounced, buttonNextUp);
-// Klik op just announced button
-buttonJustAnnounced.addEventListener("click", function () {
+  // Standaard staat de "Just Announced" knop geselecteerd
   articlesJustAnnounced.classList.remove("hidden");
   articlesNextUp.classList.add("hidden");
   updateButtonColors(buttonJustAnnounced, buttonNextUp);
+  // Klik op just announced button
+  buttonJustAnnounced.addEventListener("click", function () {
+    articlesJustAnnounced.classList.remove("hidden");
+    articlesNextUp.classList.add("hidden");
+    updateButtonColors(buttonJustAnnounced, buttonNextUp);
+  });
+
+  // Klik op next up button
+  buttonNextUp.addEventListener("click", function () {
+    articlesJustAnnounced.classList.add("hidden");
+    articlesNextUp.classList.remove("hidden");
+    updateButtonColors(buttonNextUp, buttonJustAnnounced);
+  });
+}
+
+// Selecteer knop hamburgermenu voor desktop
+var hamburgerButtonDesktop = document.querySelector('.hamburger-menu-desktop-button');
+
+hamburgerButtonDesktop.addEventListener('click', function () {
+  menu.classList.toggle('active');
+  console.log("button is clicked");
+
+  // If menu is geopend dan is het kruisje actief
+  if (menu.classList.contains('active')) {
+    hamburgerButtonDesktop.src = 'images/cross_black.svg';
+    console.log("kruisje");
+  } else {
+    hamburgerButtonDesktop.src = 'images/hamburgermenu_button_black.svg';
+    console.log("streepjes");
+  }
 });
-
-// Klik op next up button
-buttonNextUp.addEventListener("click", function () {
-  articlesJustAnnounced.classList.add("hidden");
-  articlesNextUp.classList.remove("hidden");
-  updateButtonColors(buttonNextUp, buttonJustAnnounced);
-}); 
-}
-
-else if (window.location.pathname === '/index.html'){
-    // /* Selecteer knop justAnnounced */
-var buttonJustAnnounced = document.querySelector(".button_justAnnounced");
-// /* Selecteer articles van justAnnounced */
-var articlesJustAnnounced = document.querySelector(".Articles_justAnnounced");
-
-// /* Selecteer knop nextUp */
-var buttonNextUp = document.querySelector(".button_nextUp");
-// /* Selecteer articles nextUp */
-var articlesNextUp = document.querySelector(".Articles_nextUp");
-
-// Functie om knopkleuren bij te werken
-function updateButtonColors(selectedButton, otherButton) {
-    selectedButton.style.color = "black";
-    otherButton.style.color = "grey";
-}
-
-// Standaard staat de "Just Announced" knop geselecteerd
-articlesJustAnnounced.classList.remove("hidden");
-articlesNextUp.classList.add("hidden");
-updateButtonColors(buttonJustAnnounced, buttonNextUp);
-// Klik op just announced button
-buttonJustAnnounced.addEventListener("click", function () {
-  articlesJustAnnounced.classList.remove("hidden");
-  articlesNextUp.classList.add("hidden");
-  updateButtonColors(buttonJustAnnounced, buttonNextUp);
-});
-
-// Klik op next up button
-buttonNextUp.addEventListener("click", function () {
-  articlesJustAnnounced.classList.add("hidden");
-  articlesNextUp.classList.remove("hidden");
-  updateButtonColors(buttonNextUp, buttonJustAnnounced);
-}); 
-}
