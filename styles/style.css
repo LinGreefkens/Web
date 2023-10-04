@@ -15,8 +15,8 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text: #111;
-	--color-background: #eee;
+	--color-text: black;
+	--color-background: white;
 }
 
 
@@ -27,662 +27,115 @@
 	font-family: 'CalibreRegular';
 	src: url('../fonts/CalibreRegular.woff') format(woff);
 }
+/* Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face */
 
 /****************/
 /* MOBILE */
 /****************/
-@media only screen and (max-width: 480px) {
-	body {
-		max-width: 100%;
-		overflow-x: hidden;
-	}
-
-	/* TEKSTUEEL */
-	h1 {
-		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-		letter-spacing: 0.1em;
-		color: black;
-		font-size: 14.8vw;
-	}
-
-	h2 {
-		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-		letter-spacing: 0.02em;
-		line-height: 1.2em;
-		color: black;
-		font-size: 180%;
-		margin-top: 4%;
-	}
-
-	h3 {
-		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-		letter-spacing: 0.1em;
-		color: black;
-		font-size: xx-large;
-		margin-left: 4%;
-	}
-
-	h4 {
-		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-		letter-spacing: 0.1em;
-		color: black;
-		font-size: 10vw;
-		line-height: 1.25;
-		padding-top: 5%;
-		padding-bottom: 8%;
-		margin-left: 4%;
-	}
-
-	h5 {
-		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-		letter-spacing: 0.1em;
-		color: black;
-		margin-left: 4%;
-		font-size: medium;
-	}
-
-	h6 {
-		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-		letter-spacing: 0.1em;
-		color: grey;
-		font-size: medium;
-		margin-left: 4%;
-	}
-
-	p {
-		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-		font-weight: 400;
-		font-size: 1.1em;
-		line-height: 1.35;
-		margin-left: 4%;
-		margin-right: 4%;
-	}
-
-	a {
-		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-		letter-spacing: 0.02em;
-		color: black;
-		font-size: 180%;
-	}
-
-	time {
-		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-		font-weight: 400;
-		letter-spacing: 0.1em;
-		color: black;
-		margin-left: 4%;
-	}
-
-	a[rel="agenda"] {
-		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-		letter-spacing: 0.1em;
-		color: black;
-		font-size: 300%;
-		text-decoration: none;
-
-		display: inline-block;
-		padding-left: 4%;
-		padding-right: 10%;
-		padding-top: 10%;
-		padding-bottom: 10%;
-	}
-
-	/* header + navigatie bovenin op de homepage */
-	.containernav {
-		display: grid;
-		grid-template-columns: auto auto;
-	}
-
-	.containernav a {
-		line-height: 1.6em;
-		font-size: 180%;
-		margin-left: -16%;
-	}
-
-	.containernav h2 {
-		line-height: 1.5em;
-	}
-
-	header {
-		margin-left: 4%;
-		margin-top: 5%;
-		margin-bottom: 2%;
-	}
-
-	.menu-zichtbaar-desktop{
-		display: none;
-	}
-
-	/* grid op de homepage */
-	.grid-container {
-		display: grid;
-		grid-template-columns: 5em 5em 5em 5em 5em;
-		grid-template-rows: 12em 12em 15em 13em 12em 12em 15em 11em;
-
-		padding: 5%;
-		background-image: url('../images/background.jpg');
-		background-size: cover;
-		width: 100%;
-		height: auto;
-		padding-top: 10%;
-		padding-bottom: 20%;
-	}
-
-	.grid-container article:nth-child(1) {
-		/* DUB FX */
-		width: 12em;
-		height: auto;
-		grid-row: 1/2;
-		grid-column: 2/5;
-	}
-
-	.grid-container article:nth-child(2) {
-		/* THE AMITY AFFLICTION */
-		width: 11em;
-		height: auto;
-		grid-row: 2/3;
-		grid-column: 1/4;
-	}
-
-	.grid-container article:nth-child(3) {
-		/* HEAVY */
-		width: 12em;
-		height: auto;
-		grid-row: 2/3;
-		grid-column: 3/6;
-		padding-left: 20%;
-		padding-top: 20%;
-	}
-
-	.grid-container article:nth-child(4) {
-		/* COLIN BENDERS INVITES: BLAWAN LIVE / JAKOJAKO... */
-		width: 12em;
-		height: auto;
-		grid-row: 3/4;
-		grid-column: 2/5;
-		padding-top: 25%;
-	}
-
-	.grid-container article:nth-child(5) {
-		/* THE SHERLOCKS */
-		width: 11em;
-		height: auto;
-		grid-row: 4/5;
-		grid-column: 1/4;
-		padding-top: 15%;
-	}
-
-	.grid-container article:nth-child(6) {
-		/* ELIAS MAZIAN (LIVE) */
-		width: 12em;
-		height: auto;
-		grid-row: 4/5;
-		grid-column: 3/6;
-		padding-left: 20%;
-		padding-top: 50%;
-	}
-
-	.grid-container article:nth-child(7) {
-		/* EXPO */
-		width: 12em;
-		height: auto;
-		grid-row: 5/6;
-		grid-column: 2/5;
-		padding-top: 35%;
-	}
-
-	.grid-container article:nth-child(8) {
-		/* YAEJI */
-		width: 11em;
-		height: auto;
-		grid-row: 6/7;
-		grid-column: 1/4;
-		padding-top: 60%;
-	}
-
-	.grid-container article:nth-child(9) {
-		/* MADISON MCFERRIN */
-		width: 13em;
-		height: auto;
-		grid-row: 6/7;
-		grid-column: 3/6;
-		padding-left: 20%;
-		padding-top: 90%;
-	}
-
-	.grid-container article:nth-child(10) {
-		/* LEELA JAMES */
-		width: 12em;
-		height: auto;
-		grid-row: 7/8;
-		grid-column: 2/5;
-		padding-top: 85%;
-	}
-
-	.grid-container time {
-		font-size: x-small;
-		line-height: 2em;
-		color: white;
-	}
-
-	.grid-container h3 {
-		font-size: smaller;
-		margin-top: 1%;
-		color: white;
-	}
-
-	.grid-container img {
-		width: 100%;
-	}
-
-
-	/* knoppen just announced + next up */
-	.button_justAnnounced,
-	.button_nextUp {
-		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-		font-size: 4vw;
-		letter-spacing: 0.02em;
-		background: none;
-		border: none;
-		margin-right: 0em;
-		margin-left: 1em;
-		margin-bottom: 4%;
-	}
-
-	.justAnnounced {
-		border-bottom: 1px solid #DDDDDD;
-		padding-bottom: 1em;
-		padding-top: 1em;
-		position: relative;
-	}
-
-	.justAnnounced time {
-		font-size: x-small;
-
-		position: absolute;
-		right: 0;
-		top: 0;
-
-		margin-top: 5%;
-		margin-right: 4%;
-	}
-
-	.nextUp {
-		border-bottom: 1px solid #DDDDDD;
-		padding-bottom: 1em;
-		padding-top: 1em;
-		position: relative;
-	}
-
-	.nextUp time {
-		font-size: x-small;
-
-		position: absolute;
-		right: 0;
-		top: 0;
-
-		margin-top: 5%;
-		margin-right: 4%;
-	}
-
-	/* highlights */
-	.highlights time {
-		font-size: small;
-		line-height: 4em;
-	}
-
-	.highlights img {
-		width: 92%;
-		margin-left: 4%;
-		margin-right: 4%;
-		margin-top: 4%;
-	}
-
-	.highlights h2 {
-		margin-left: 4%;
-		margin-top: 0%;
-	}
-
-	/* styling van alle afbeeldingen (breedte) */
-	section img {
-		width: 92%;
-		height: auto;
-		margin-left: 4%;
-		margin-right: 4%;
-	}
-
-	/* agenda */
-	.agenda_arrow {
-		width: 2.5em;
-		margin-left: 3%;
-	}
-
-	/* young creatives */
-	.leesmeer_arrow {
-		width: 1em;
-		margin-left: 3%;
-		margin-top: 10%;
-	}
-
-	.leesmeer_button {
-		margin-left: 4%;
-		font-size: large;
-		margin-top: -3%;
-		padding-bottom: 40%;
-		text-decoration: none;
-	}
-
-	img[alt="young creatives"] {
-		margin-top: 10%;
-	}
-
-	.youngcreatives_h1 {
-		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-		letter-spacing: 0.1em;
-		color: black;
-		font-size: 12vw;
-		margin-left: 4%;
-		margin-top: 9%;
-		margin-bottom: 9%;
-	}
-
-	.youngcreatives_p {
-		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-		font-size: 1.4em;
-		line-height: 1.2;
-		margin-left: 4%;
-		margin-right: 4%;
-		margin-top: 7%;
-		margin-bottom: 20%;
-		color: gray;
-	}
-
-	.youncreatives_section article {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		margin-bottom: 5%;
-	}
-
-	.youncreatives_section h5 {
-		font-size: x-large;
-		margin-top: 6%;
-	}
-
-	.youngcreatives_arrow {
-		align-self: flex-end;
-
-		width: 1em;
-		margin-left: 3%;
-		margin-bottom: 1.5%;
-	}
-
-	/* young creatives pagina img */
-	.young-creatives-header {
-		margin: 0;
-		width: 100%;
-	}
-
-	/* young creatives articles */
-	.youncreatives_section>article>section {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-
-	.youncreatives_section>article>p {
-		width: 95%;
-	}
-
-	/* cineradar */
-	.cineradar {
-		display: grid;
-		grid-template-columns: 14.5em 8.6em;
-		grid-template-rows: 3em 3em 3em 3em;
-		margin-bottom: 30%;
-		margin-left: 4%;
-	}
-
-	.cineradar hr {
-		grid-row: 2/3;
-		grid-column: 1/3;
-		margin-left: 2%;
-	}
-
-	.cineradar h2 {
-		margin-left: 4%;
-		font-size: larger;
-		margin-top: 10%;
-		grid-row: 2/3;
-		grid-column: 1/2;
-
-	}
-
-	.cineradar h6 {
-		margin-left: 4%;
-		margin-top: 2%;
-		font-size: small;
-		grid-row: 3/4;
-		grid-column: 1/2;
-	}
-
-	.cineradar time {
-		font-size: x-large;
-		margin-left: 4%;
-		grid-row: 1/2;
-		grid-column: 1/2;
-	}
-
-	.cineradar a {
-		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
-		letter-spacing: 0.1em;
-		line-height: 1.25;
-		padding-top: 3%;
-		padding-bottom: 8%;
-		margin-left: 4%;
-		
-		font-size: x-small;
-		display: inline-block;
-		border: 1px solid black;
-		text-align: center;
-		width: fit-content;
-		padding-left: 5%;
-		padding-right: 5%;
-		margin-top: 10%;
-		grid-row: 4/5;
-		grid-column: 1/2;
-	}
-
-	.cineradar img {
-		height: auto;
-		grid-row: 2/3;
-		grid-column: 2/3;
-		margin-top: 18%;
-		margin-left: 30%;
-		width: 60%;
-		height: auto;
-	}
-
-	/* over young creatives */
-	.over_yc p:nth-child(1) {
-		margin: 0;
-		margin-left: 4%;
-	}
-
-	.over_yc p {
-		margin-bottom: 5%;
-	}
-
-	/* Grid afbeeldingen young creatives */
-	.grid_youngcreatives {
-		display: grid;
-		grid-template-columns: 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em 2em;
-		grid-template-rows: 9em 10em 12em;
-		grid-gap: 0.5rem;
-
-		padding-bottom: 30%;
-	}
-
-	.grid_youngcreatives img:nth-child(1) {
-		width: 17em;
-		height: auto;
-		grid-row: 1/2;
-		grid-column: 3/11;
-	}
-
-	.grid_youngcreatives img:nth-child(4) {
-		width: 18em;
-		height: auto;
-		grid-row: 2/3;
-		grid-column: 2/10;
-	}
-
-	.grid_youngcreatives img:nth-child(2) {
-		width: 12em;
-		height: auto;
-		grid-row: 3/4;
-		grid-column: 1/6;
-		margin: 0;
-	}
-
-	.grid_youngcreatives img:nth-child(5) {
-		width: 15em;
-		height: auto;
-		grid-row: 3/4;
-		grid-column: 5/13;
-
-		padding-left: 10%;
-		padding-top: 11%;
-	}
-
-	.grid_youngcreatives img:nth-child(3) {
-		width: 18em;
-		height: auto;
-		grid-row: 4/5;
-		grid-column: 2/10;
-
-		padding-left: 10%;
-	}
-
-
-	/* footer */
-	footer {
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		background-color: black;
-		padding-top: 1.5em;
-		padding-bottom: 1.5em;
-		padding-left: 10%;
-		padding-right: 10%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		z-index: 2000;
-	}
-
-	footer img:nth-child(1) {
-		width: auto;
-		height: 50%;
-		padding-top: 8%;
-	}
-
-	footer img:nth-child(2) {
-		width: 8%;
-		height: auto;
-		margin-left: 70%;
-	}
-
-	footer img:nth-child(3) {
-		width: 10%;
-		height: auto;
-		margin-left: 8%;
-	}
-
-	/* hamburger menu */
-	.hidden {
-		display: none;
-	}
-
-	ul.hamburger-menu {
-		background-color: black;
-		height: 100vh;
-		display: none;
-	}
-
-	ul>li:nth-child(1) {
-		padding-top: 10%;
-	}
-
-	ul>section>li:nth-child(1) {
-		padding-top: 10%;
-	}
-
-	ul li a {
-		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-		letter-spacing: 0.1em;
-		font-size: 1.8em;
-		color: white;
-		text-decoration: none;
-		padding-left: 4%;
-		display: inline-block;
-		width: 1.2em;
-	}
-
-	.socials {
-		width: 80%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		padding-top: 8%;
-		padding-bottom: 8%;
-	}
-
-	ul a[rel="agenda"] {
-		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-		letter-spacing: 0.1em;
-		font-size: 1.8em;
-		color: white;
-		text-decoration: none;
-		padding-left: 4%;
-		padding-right: 0;
-		padding-bottom: 0;
-		padding-top: 0;
-	}
-
-	.button_NL,
-	.button_EN {
-		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
-		font-size: 4vw;
-		letter-spacing: 0.02em;
-		color: white;
-		background: none;
-		border: none;
-		margin-right: 0em;
-		margin-left: 1em;
-		margin-bottom: 4%;
-	}
-
-	ul.hamburger-menu.active {
-		display: block;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1000;
-	}
-
-	.menuklein {
-		font-size: medium;
-		white-space: nowrap;
-		padding-top: 3%;
-	}
+body {
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
-/* general styling */
+/****** GENERAL STYLING *******/
+/* TEKSTUEEL */
+h1 {
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: 14.8vw;
+}
+
+h2 {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	letter-spacing: 0.02em;
+	line-height: 1.2em;
+	color: black;
+	font-size: 180%;
+	margin-top: 4%;
+}
+
+h3 {
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: xx-large;
+	margin-left: 4%;
+}
+
+h4 {
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: 10vw;
+	line-height: 1.25;
+	padding-top: 5%;
+	padding-bottom: 8%;
+	margin-left: 4%;
+}
+
+h5 {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	letter-spacing: 0.1em;
+	color: black;
+	margin-left: 4%;
+	font-size: medium;
+}
+
+h6 {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	letter-spacing: 0.1em;
+	color: grey;
+	font-size: medium;
+	margin-left: 4%;
+}
+
+p {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.1em;
+	line-height: 1.35;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+a {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	letter-spacing: 0.02em;
+	color: black;
+	font-size: 180%;
+}
+
+time {
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	color: black;
+	margin-left: 4%;
+}
+
+.agenda_title {
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: 300%;
+	text-decoration: none;
+
+	display: inline-block;
+	padding-left: 4%;
+	padding-right: 10%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+/* styling van alle afbeeldingen (breedte) */
+section img {
+	width: 92%;
+	height: auto;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
 section {
 	margin-bottom: 10%;
 }
@@ -697,15 +150,569 @@ hr {
 }
 
 
+
+
+
+/****** HOME PAGE *******/
+/* header + navigatie bovenin op de homepage */
+.containernav {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.containernav a {
+	line-height: 1.6em;
+	font-size: 180%;
+	margin-left: -16%;
+}
+
+.containernav h2 {
+	line-height: 1.5em;
+}
+
+.header-home {
+	margin-left: 4%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+.menu-zichtbaar-desktop {
+	display: none;
+}
+
+/* grid op de homepage */
+/* Bron:  https://www.w3schools.com/css/css_grid.asp */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	padding: 5%;
+	background-image: url('../images/background.jpg');
+	background-size: contain;
+	width: 100%;
+	height: auto;
+	padding-top: 10%;
+	padding-bottom: 20%;
+}
+
+.grid-container article:nth-child(1) {
+	/* DUB FX */
+	width: 100%;
+	height: auto;
+	grid-row: 1/2;
+	grid-column: 2/5;
+	padding: 0;
+}
+
+.grid-container article:nth-child(2) {
+	/* THE AMITY AFFLICTION */
+	width: 100%;
+	height: auto;
+	grid-row: 2/3;
+	grid-column: 1/4;
+	padding-top: 0;
+}
+
+.grid-container article:nth-child(3) {
+	/* HEAVY */
+	width: 100%;
+	height: auto;
+	grid-row: 7/8;
+	grid-column: 2/5;
+	padding: 0;
+}
+
+.grid-container article:nth-child(4) {
+	/* COLIN BENDERS INVITES: BLAWAN LIVE / JAKOJAKO... */
+	width: 100%;
+	height: auto;
+	grid-row: 6/7;
+	grid-column: 3/6;
+	padding: 0;
+}
+
+.grid-container article:nth-child(5) {
+	/* THE SHERLOCKS */
+	width: 100%;
+	height: auto;
+	grid-row: 3/4;
+	grid-column: 3/6;
+	padding: 0;
+}
+
+.grid-container article:nth-child(6) {
+	/* ELIAS MAZIAN (LIVE) */
+	width: 100%;
+	height: auto;
+	grid-row: 5/6;
+	grid-column: 1/4;
+	padding: 0;
+	padding-top: 20%;
+}
+
+.grid-container article:nth-child(7) {
+	/* EXPO */
+	width: 100%;
+	height: auto;
+	grid-row: 4/6;
+	grid-column: 2/5;
+	padding: 0;
+}
+
+.grid-container article:nth-child(8) {
+	/* YAEJI */
+	width: 100%;
+	height: auto;
+	grid-row: 8/9;
+	grid-column: 1/4;
+	padding: 0;
+	padding-top: 20%;
+}
+
+.grid-container article:nth-child(9) {
+	/* MADISON MCFERRIN */
+	width: 100%;
+	height: auto;
+	grid-row: 9/10;
+	grid-column: 3/6;
+	padding: 0;
+}
+
+.grid-container article:nth-child(10) {
+	/* LEELA JAMES */
+	width: 100%;
+	height: auto;
+	grid-row: 10/11;
+	grid-column: 2/5;
+	padding: 0;
+}
+
+.grid-container time {
+	font-size: x-small;
+	line-height: 2em;
+	color: white;
+}
+
+.grid-container h3 {
+	font-size: smaller;
+	margin-top: 1%;
+	color: white;
+}
+
+.grid-container img {
+	width: 100%;
+}
+
+
+
+/* just announced + next up */
+.button_justAnnounced,
+.button_nextUp {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	font-size: 4vw;
+	letter-spacing: 0.02em;
+	background: none;
+	border: none;
+	margin-right: 0em;
+	margin-left: 1em;
+	margin-bottom: 4%;
+}
+
+.justAnnounced,
+.nextUp {
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	position: relative;
+}
+
+.justAnnounced time,
+.nextUp time {
+	font-size: x-small;
+
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	margin-top: 5%;
+	margin-right: 4%;
+}
+
+
+/* highlights */
+.highlights time {
+	font-size: small;
+	line-height: 4em;
+}
+
+.highlights img {
+	width: 92%;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 4%;
+}
+
+.highlights h2 {
+	margin-left: 4%;
+	margin-top: 0%;
+}
+
+
+/* agenda */
+.agenda_arrow {
+	width: 2.5em;
+	margin-left: 3%;
+}
+
+
+/* young creatives --> homepage*/
+img[alt="young creatives"] {
+	margin-top: 10%;
+}
+
+.leesmeer_arrow {
+	width: 1em;
+	margin-left: 3%;
+	margin-top: 10%;
+}
+
+.leesmeer_button {
+	margin-left: 4%;
+	font-size: large;
+	margin-top: -3%;
+	padding-bottom: 40%;
+	text-decoration: none;
+}
+
+
+
+
+
+/****** YOUNG CREATIVES PAGE *******/
+/* Header */
+.young-creatives-image {
+	margin: 0;
+	width: 100%;
+}
+
+.youngcreatives_h1 {
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+	letter-spacing: 0.1em;
+	color: black;
+	font-size: 12vw;
+	margin-left: 4%;
+	margin-top: 9%;
+	margin-bottom: 9%;
+}
+
+.youngcreatives_p {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	font-size: 1.35em;
+	line-height: 1.2;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 7%;
+	margin-bottom: 20%;
+	color: gray;
+}
+
+
+/* artikelen */
+.youncreatives_section>article>section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.youncreatives_section h5 {
+	font-size: x-large;
+	margin-top: 6%;
+}
+
+.youngcreatives_arrow {
+	align-self: flex-end;
+
+	width: 1em;
+	margin-left: 3%;
+	margin-bottom: 1.5%;
+}
+
+
+/* cineradar */
+.cineradar {
+	display: grid;
+	grid-template-columns: 2.9fr 1.8fr;
+	grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+	margin-bottom: 30%;
+}
+
+.cineradar hr {
+	grid-row: 2/3;
+	grid-column: 1/3;
+	margin-left: 2%;
+}
+
+.cineradar h2 {
+	margin-left: 4%;
+	font-size: larger;
+	margin-top: 10%;
+	grid-row: 2/3;
+	grid-column: 1/2;
+}
+
+.cineradar h6 {
+	margin-left: 4%;
+	margin-top: 2%;
+	font-size: small;
+	grid-row: 3/4;
+	grid-column: 1/2;
+}
+
+.cineradar time {
+	font-size: x-large;
+	margin-left: 4%;
+	grid-row: 1/2;
+	grid-column: 1/2;
+}
+
+.cineradar a {
+	font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+	letter-spacing: 0.1em;
+	line-height: 1.25;
+	font-size: x-small;
+	display: inline-block;
+	border: 1px solid black;
+	text-align: center;
+	width: fit-content;
+	margin-left: 4%;
+	margin-top: 4%;
+
+	padding-bottom: 2%;
+	padding-top: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	grid-row: 4/5;
+	grid-column: 1/2;
+}
+
+.cineradar img {
+	height: auto;
+	grid-row: 2/3;
+	grid-column: 2/3;
+	margin-left: 25%;
+	padding-top: 5%;
+	width: 60%;
+	height: auto;
+}
+
+/* over young creatives */
+.over_yc p:nth-child(1) {
+	margin: 0;
+	margin-left: 4%;
+}
+
+.over_yc p {
+	margin-bottom: 5%;
+}
+
+/* Grid afbeeldingen young creatives */
+.grid_youngcreatives {
+	display: grid;
+	grid-template-columns: repeat(12, 2fr);
+	grid-template-rows: 0.1fr;
+	margin-bottom: 50%;
+}
+
+.grid_youngcreatives img:nth-child(1) {
+	width: 100%;
+	height: auto;
+	grid-row: 1/2;
+	grid-column: 3/11;
+}
+
+.grid_youngcreatives img:nth-child(4) {
+	width: 100%;
+	height: auto;
+	grid-row: 1/2;
+	grid-column: 1/10;
+	padding-top: 50%;
+	padding-left: 5%;
+}
+
+.grid_youngcreatives img:nth-child(2) {
+	width: 115%;
+	height: auto;
+	grid-row: 1/2;
+	grid-column: 1/6;
+	margin: 0;
+	padding-top: 170%;
+}
+
+.grid_youngcreatives img:nth-child(5) {
+	width: 100%;
+	height: auto;
+	grid-row: 1/2;
+	grid-column: 7/13;
+	margin: 0;
+	padding-top: 155%;
+}
+
+.grid_youngcreatives img:nth-child(3) {
+	width: 100%;
+	height: auto;
+	grid-row: 1/2;
+	grid-column: 2/10;
+	padding-top: 182%;
+}
+
+
+/* footer */
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: black;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 2000;
+}
+/* Bron:  https://gathering.tweakers.net/forum/list_messages/1095246 */
+
+footer img:nth-child(1) {
+	width: auto;
+	height: 50%;
+	padding-top: 8%;
+}
+
+footer img:nth-child(2) {
+	width: 8%;
+	height: auto;
+	margin-left: 70%;
+}
+
+footer img:nth-child(3) {
+	width: 10%;
+	height: auto;
+	margin-left: 8%;
+}
+
+
+/* hamburger menu MOBILE */
+.hidden {
+	display: none;
+}
+
+ul.hamburger-menu {
+	background-color: black;
+	height: 100vh;
+	display: none;
+}
+
+ul.hamburger-menu>li:nth-child(1) {
+	padding-top: 10%;
+}
+
+ul.hamburger-menu>li:nth-child(6) {
+	padding-top: 5%;
+}
+
+.menugroot {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 1.8em;
+	color: white;
+	text-decoration: none;
+	white-space: nowrap;
+
+	padding-left: 4%;
+	display: inline-block;
+	width: 1.2em;
+}
+
+.menuklein {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	letter-spacing: 0.1em;
+	font-size: 1.2em;
+	color: white;
+	text-decoration: none;
+	white-space: nowrap;
+
+	padding-left: 4%;
+	display: inline-block;
+	padding-top: 2%;
+}
+
+.socials {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	margin-left: 2%;
+}
+
+.socials img {
+	width: 50%;
+	height: auto;
+	margin-left: 10%;
+}
+
+.button_NL,
+.button_EN {
+	font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+	font-size: 4vw;
+	letter-spacing: 0.02em;
+	color: white;
+	background: none;
+	border: none;
+	margin-right: 0em;
+	margin-left: 1em;
+	margin-bottom: 4%;
+}
+
+ul.hamburger-menu.active {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+.header-youngcreatives {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
 /****************/
 /* DESKTOP */
 /****************/
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 60rem) {
 	body {
 		max-width: 100%;
 		overflow-x: hidden;
 	}
+	/* Bron 1: https://www.w3schools.com/cssref/css3_pr_mediaquery.php */
+	/* Bron 2: https://www.freecodecamp.org/news/media-query-css-example-max-and-min-screen-width-for-mobile-responsive-design/ */
 
+	/****** GENERAL STYLING *******/
 	/* TEKSTUEEL */
 	h1 {
 		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
@@ -780,8 +787,37 @@ hr {
 		margin-left: 4%;
 	}
 
-	/* header + navigatie bovenin op de homepage */
-	header {
+	.h4-programma {
+		font-family: 'SfSquarehead', Arial, Helvetica, sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		font-size: 5vw;
+		line-height: 1.25;
+		margin-left: 4%;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+		padding-bottom: 2%;
+	}
+
+	/* styling van alle afbeeldingen (breedte) */
+	section {
+		margin-bottom: 10%;
+	}
+
+	hr {
+		width: 92%;
+		margin: 0;
+		border: none;
+		height: 1px;
+		background-color: black;
+		margin-left: 4%;
+	}
+
+
+	/****** HOME PAGE *******/
+	/* header + navigatie bovenin */
+	.header-home {
 		margin-left: 4%;
 		margin-top: 2%;
 		margin-bottom: 2%;
@@ -801,33 +837,36 @@ hr {
 
 	nav a {
 		margin-right: 1%;
+		padding-top: 0.5%;
 	}
 
 	.containernav h2 {
-		margin-right: 3%;
+		padding-top: 2%;
+		margin-right: 5%;
 		line-height: 0.5em;
 	}
 
 	.containernav a {
 		width: 10em;
+		padding-left: 15%;
 	}
 
-
-	.menu-zichtbaar-desktop{
+	.menu-zichtbaar-desktop {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		padding-left: 27%;
 	}
 
-	.nav-link-klein{
+	.nav-link-klein {
 		text-decoration: none;
 		font-size: 1.3vw;
 		padding-left: 5%;
+		padding-top: 3%;
 	}
 
-	.menu-zichtbaar-desktop img{
-		width: 5%;
+	.menu-zichtbaar-desktop img {
+		width: 7%;
 		height: auto;
 		margin-left: 5%;
 	}
@@ -835,11 +874,10 @@ hr {
 	/* grid op de homepage */
 	.grid-container {
 		display: grid;
-		grid-template-columns: 16em 16em 16em 16em 16em;
-		grid-template-rows: 12em 12em 15em 13em 12em 12em 15em 11em 11em 17em;
-
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
 		background-image: url('../images/background_desktop.png');
-		background-size: cover;
+		background-size: contain;
 		width: 100%;
 		height: auto;
 		padding-top: 10%;
@@ -851,100 +889,92 @@ hr {
 
 	.grid-container article:nth-child(1) {
 		/* DUB FX */
-		width: 25em;
+		width: 100%;
 		height: auto;
 		grid-row: 1/2;
-		grid-column: 3/6;
-		padding-left: 10%;
+		grid-column: 3/5;
+		padding: 0;
 	}
 
 	.grid-container article:nth-child(2) {
 		/* THE AMITY AFFLICTION */
-		width: 29em;
+		width: 100%;
 		height: auto;
-		grid-row: 1/2;
-		grid-column: 1/4;
-		padding-top: 15%;
-		padding-left: 20%;
+		grid-row: 2/3;
+		grid-column: 1/3;
+		padding-top: 10%;
 	}
 
 	.grid-container article:nth-child(3) {
 		/* HEAVY */
-		width: 33em;
+		width: 100%;
 		height: auto;
-		grid-row: 1/2;
-		grid-column: 4/6;
-		padding-left: 40%;
-		padding-top: 25%;
+		grid-row: 5/6;
+		grid-column: 3/5;
+		padding-top: 10%;
 	}
 
 	.grid-container article:nth-child(4) {
 		/* COLIN BENDERS INVITES: BLAWAN LIVE / JAKOJAKO... */
-		width: 25em;
+		width: 100%;
 		height: auto;
-		grid-row: 3/4;
-		grid-column: 3/6;
-		padding-left: 10%;
+		grid-row: 4/5;
+		grid-column: 5/7;
+		padding-top: 25%;
 	}
 
 	.grid-container article:nth-child(5) {
 		/* THE SHERLOCKS */
-		width: 29em;
+		width: 100%;
 		height: auto;
-		grid-row: 3/4;
-		grid-column: 1/4;
-		padding-top: 30%;
-		padding-left: 20%;
+		grid-row: 2/3;
+		grid-column: 5/7;
+		padding-top: 25%;
 	}
 
 	.grid-container article:nth-child(6) {
 		/* ELIAS MAZIAN (LIVE) */
-		width: 33em;
+		width: 100%;
 		height: auto;
-		grid-row: 3/4;
-		grid-column: 4/6;
-		padding-left: 30%;
-		padding-top: 70%;
+		grid-row: 4/5;
+		grid-column: 1/3;
+		padding-top: 10%;
 	}
 
 	.grid-container article:nth-child(7) {
 		/* EXPO */
-		width: 25em;
+		width: 100%;
 		height: auto;
-		grid-row: 5/6;
-		grid-column: 3/4;
-		padding-top: 90%;
-		padding-left: 10%;
+		grid-row: 3/4;
+		grid-column: 3/5;
+		padding-top: 10%;
 	}
 
 	.grid-container article:nth-child(8) {
 		/* YAEJI */
-		width: 30em;
+		width: 100%;
 		height: auto;
 		grid-row: 6/7;
-		grid-column: 1/4;
-		padding-top: 40%;
-		padding-left: 10%;
+		grid-column: 1/3;
+		padding-top: 10%;
 	}
 
 	.grid-container article:nth-child(9) {
 		/* MADISON MCFERRIN */
-		width: 33em;
+		width: 100%;
 		height: auto;
 		grid-row: 6/7;
-		grid-column: 4/6;
-		padding-left: 30%;
-		padding-top: 60%;
+		grid-column: 5/7;
+		padding-top: 25%;
 	}
 
 	.grid-container article:nth-child(10) {
 		/* LEELA JAMES */
-		width: 25em;
+		width: 100%;
 		height: auto;
-		grid-row: 8/9;
-		grid-column: 3/4;
-		padding-top: 85%;
-		padding-left: 10%;
+		grid-row: 7/8;
+		grid-column: 3/5;
+		padding-top: 10%;
 	}
 
 	.grid-container time {
@@ -963,7 +993,7 @@ hr {
 		width: 100%;
 	}
 
-	/* knoppen just announced + next up */
+	/* Programma + Highlights */
 	.button_justAnnounced,
 	.button_nextUp {
 		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
@@ -1006,23 +1036,34 @@ hr {
 		margin-right: 4%;
 	}
 
-
-	/* zorgt ervoor dat programma en highlights naast elkaar komen te staan */
 	.programmaenhighlights {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-gap: 1.5rem;
+		position: relative;
+		height: 100%;
 	}
 
 	.programma {
-		width: 65%;
+		width: 100%;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		margin-left: 3%;
+		margin-right: 4%;
+	}
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+
+	.programma.sticky {
+		position: absolute;
+		bottom: 0;
+		top: auto;
 	}
 
-	/* highlights */
 	.highlights {
-		width: 35%;
-		margin-top: 7%;
-		margin-right: 4%;
+		width: 100%;
+		position: relative;
+		margin-top: 2.5%;
 	}
 
 	.highlights time {
@@ -1041,13 +1082,6 @@ hr {
 		margin-top: 0%;
 	}
 
-	/* styling van alle afbeeldingen (breedte) */
-	section img {
-		width: 92%;
-		height: auto;
-		margin-left: 4%;
-		margin-right: 4%;
-	}
 
 	/* agenda */
 	.agenda_title {
@@ -1058,26 +1092,20 @@ hr {
 		text-decoration: none;
 
 		display: inline-block;
+		padding: 0;
 		padding-left: 4%;
-		padding-right: 10%;
-		padding-top: 5%;
-		padding-bottom: 5%;
+		padding-bottom: 8%;
+		padding-top: 8%;
+
+
 	}
 
 	.agenda_arrow {
 		width: 4em;
-		margin-left: 55%;
+		margin-left: 65%;
 	}
 
-	.agenda_hr {
-		width: 100%;
-		margin: 0;
-		border: none;
-		height: 1px;
-		background-color: black;
-	}
-
-	/* young creatives HOME */
+	/* young creatives --> homepage*/
 	.homeyoungcreatives {
 		display: flex;
 		flex-direction: row;
@@ -1127,23 +1155,315 @@ hr {
 		display: none;
 	}
 
-	/* hamburger menu */
-	ul.hamburger-menu {
+
+
+
+
+	/****** YOUNG CREATIVES PAGE *******/
+	/* Header */
+	.header-youngcreatives {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr) 0.8fr 0.2fr 0.2fr;
+		grid-template-rows: 2em;
+		margin: 3% 4% 0 6%;
+		justify-items: end;
+		align-items: end;
+	}
+
+	.header-youngcreatives :nth-child(1) {
+		grid-row: 1/2;
+		grid-column: 1/2;
+		width: 100%;
+		height: auto;
+	}
+
+	.header-youngcreatives :nth-child(2) {
+		grid-row: 1/2;
+		grid-column: 4/5;
+		font-size: x-large;
+		text-decoration: none;
+	}
+
+	.header-youngcreatives :nth-child(3) {
+		grid-row: 1/2;
+		grid-column: 5/6;
+		font-size: x-large;
+		text-decoration: none;
+		justify-self: center;
+	}
+
+	.header-youngcreatives :nth-child(4) {
+		grid-row: 1/2;
+		grid-column: 6/7;
+		width: 60%;
+		height: auto;
+		justify-self: center;
+	}
+
+	.header-youngcreatives :nth-child(5) {
+		grid-row: 1/2;
+		grid-column: 7/8;
+		width: 80%;
+		height: auto;
+	}
+
+
+	/* Hamburger menu */
+	.hidden {
 		display: none;
 	}
 
+	.menugroot {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.1em;
+		font-size: 1.8em;
+		color: white;
+		text-decoration: none;
+		white-space: nowrap;
 
-	/* general styling */
-	section {
+		padding-left: 4%;
+		display: inline-block;
+		width: 1.2em;
+	}
+
+	.menuklein {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		letter-spacing: 0.1em;
+		font-size: 1.2em;
+		color: white;
+		text-decoration: none;
+		white-space: nowrap;
+
+		padding-left: 4%;
+		display: inline-block;
+		padding-top: 2%;
+	}
+
+	.socials {
+		width: 60%;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		margin-left: 4%;
+	}
+
+	.socials img {
+		width: 50%;
+		height: auto;
+		margin-left: 10%;
+	}
+
+	.button_NL,
+	.button_EN {
+		font-family: 'CalibreRegular', Helvetica, Arial, sans-serif;
+		font-size: 1.2vw;
+		letter-spacing: 0.02em;
+		color: white;
+		background: none;
+		border: none;
+		margin-right: 0em;
+		margin-left: 1em;
+		margin-bottom: 4%;
+	}
+
+	ul.hamburger-menu.active {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 33%;
+		height: 100%;
+		z-index: 1000;
+	}
+
+
+	/* Introductie tekst en afbeelding */
+	.young-creatives-image {
+		width: 45%;
+		height: 45%;
+		margin-top: 5%;
+		margin-left: 6%;
+	}
+
+	.imageandtext-youngcreatives {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.imageandtext-youngcreatives h1 {
+		font-size: 5.5vw;
+		text-align: right;
+		padding-right: 6%;
+	}
+
+	.imageandtext-youngcreatives p {
+		font-size: 1.7vw;
+		border-top: 1px solid black;
+		padding-top: 5%;
+		margin-top: 35%;
+	}
+
+
+	/* Grid van artikelen */
+	.youncreatives_section {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: -10%;
+	}
+
+
+	/* Cineradar */
+	.cineradar {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 2.5em 5em 2em;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		padding-top: 2%;
+		padding-bottom: 8%;
+		margin-bottom: 10%;
+
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+
+	.cineradar time {
+		width: auto;
+		height: auto;
+		grid-row: 1/2;
+		grid-column: 1/2;
+		font-size: xx-large;
+		padding-top: 0;
+	}
+
+	.cineradar h2 {
+		width: auto;
+		height: auto;
+		grid-row: 1/2;
+		grid-column: 2/3;
+		font-size: xx-large;
+		padding: 0;
+		margin: 0;
+	}
+
+	.cineradar h6 {
+		width: auto;
+		height: auto;
+		grid-row: 2/3;
+		grid-column: 2/3;
+		font-size: large;
+		padding-top: 0;
+		margin: 0;
+	}
+
+	.cineradar img {
+		width: 100%;
+		height: auto;
+		grid-row: 1/4;
+		grid-column: 3/4;
+		padding: 0;
+		margin: 0;
+		right: 0;
+	}
+
+	.cineradar a {
+		width: 10%;
+		height: auto;
+		padding: 0;
+		margin: 0;
+		grid-row: 3/4;
+		grid-column: 2/3;
+		font-size: x-small;
+		display: inline-block;
+		border: 1px solid black;
+		text-align: center;
+		width: fit-content;
+		padding-left: 2%;
+		padding-right: 2%;
+		padding-top: 2%;
+	}
+
+	.cineradar>hr {
+		display: none;
+	}
+
+	/* over Young Creatives */
+	.over_yc {
+		width: 50%;
+		font-size: x-large;
+		margin: 0 auto;
 		margin-bottom: 10%;
 	}
 
-	hr {
-		width: 92%;
-		margin: 0;
-		border: none;
-		height: 1px;
-		background-color: black;
+
+	/* Grid afbeeldingen young creatives */
+	.grid_youngcreatives {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: 30fr 32fr;
+		grid-gap: 0.5rem;
+
 		margin-left: 4%;
+		margin-right: 4%;
+		padding: 0;
+		margin-bottom: 0;
 	}
-}
+
+	.grid_youngcreatives img:nth-child(1) {
+		width: 80%;
+		height: auto;
+		grid-row: 1/2;
+		grid-column: 1/5;
+		padding: 0;
+		margin: 0;
+	}
+
+	.grid_youngcreatives img:nth-child(2) {
+		width: 106%;
+		height: auto;
+		grid-row: 2/3;
+		grid-column: 1/2;
+		padding: 0;
+		margin: 0;
+		margin-top: 18%;
+	}
+
+	.grid_youngcreatives img:nth-child(3) {
+		width: 100%;
+		height: auto;
+		grid-row: 1/2;
+		grid-column: 4/7;
+		padding: 0;
+		margin: 0;
+		padding-top: 5%;
+		padding-left: 12%;
+	}
+
+	.grid_youngcreatives img:nth-child(4) {
+		width: 88%;
+		height: auto;
+		grid-row: 2/4;
+		grid-column: 3/7;
+		padding: 0;
+		margin: 0;
+		margin-top: -5%;
+		margin-left: 12%;
+	}
+
+	.grid_youngcreatives img:nth-child(5) {
+		width: 130%;
+		height: auto;
+		grid-row: 2/3;
+		grid-column: 2/3;
+		padding: 0;
+		margin: 0;
+		margin-top: 18%;
+		padding-left: 20%;
+	}
+}  
