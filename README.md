@@ -223,8 +223,8 @@ ook wordt mijn footer niet opgelezen.
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/Desktop-Home.png" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/Desktop-YoungCreatives.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Desktop-Home" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Desktop-YoungCreatives" width="375px" alt="uitomst opdracht 1">
   <img src="readme-images/Mobile-Home.png" width="375px" alt="uitomst opdracht 1">
   <img src="readme-images/Mobile-YoungCreatives.png" width="375px" alt="uitomst opdracht 1">
 
